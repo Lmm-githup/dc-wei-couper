@@ -1,0 +1,21 @@
+<view class="banner">
+  <swiper indicator-dots="{{true}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="title">{{detail.PROD_NAME}}</view>
+<view class="desc">
+  <view class="ti">
+    <view class="txt">药品说明</view>
+  </view>
+  <view class="con">
+    <view class="list" wx:for="{{detail.desc_list}}">
+      <view class="na">{{item.title}}</view>
+      <view class="dds">{{item.string}}</view>
+    </view>
+  </view>
+</view>

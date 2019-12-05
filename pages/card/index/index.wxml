@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="k">
+  <scroll-view class="con" scroll-y>
+    <view class="top">
+      <view class="card">
+        <view class="c-top">
+          <view class="ico">
+            <image class="" src="{{userInfo.headimgurl}}" bind:tap="goInformation">
+            </image>
+            <view class="na">
+              <view class="name">
+                <view class="txts">您好！{{userInfo.name}}</view>
+                <image wx:if="{{userInfo.is_plus!=0}}" class="cs" src="../../../static/images/vplus.png"></image>
+                <view class="ynk">{{userInfo.tier}}</view>
+              </view>
+              <view class="desc" wx:if="{{userInfo.SAVE_AMOUNT==''}}">今年已累计为您节省0元</view>
+              <view class="desc" wx:else>今年已累计为您节省{{userInfo.SAVE_AMOUNT}}元</view>
+            </view>
+          </view>
+          <view class="djs" style="display:none">
+            <view class="jdt-k {{lv}}">
+              <view class="jd-bg"></view>
+              <view class="jd-ac"></view>
+              <view class="di d1"></view>
+              <view class="di d2"></view>
+              <view class="di d3"></view>
+              <view class="di d4"></view>
+              <view class="di d5"></view>
+            </view>
+            <view class="co-k">
+              <view class="djs-co">普卡</view>
+              <view class="djs-co">银卡</view>
+              <view class="djs-co">金卡</view>
+              <view class="djs-co">铂金</view>
+              <view class="djs-co">钻石</view>
+            </view>
+          </view>
+        </view>
+        <view class="c-b" wx:if="{{userInfo.is_plus==0}}" style="display:none">
+          <image class="c" src="../../../static/images/bigv.png"></image>
+          <view class="tb">PLUS会员</view>
+          <view class="tm">开通即享7大特权</view>
+          <view class="kt">敬请期待</view>
+        </view>
+        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+      </view>
+    </view>
+    <view class="ff"></view>
+    <view class="pay-con">
+      <image class="erm" mode="aspectFit" src="{{qrcode}}"></image>
+      <image class="txm" mode="aspectFit" src="{{barcode}}"></image>
+    </view>
+    <view class="footer">
+      <view class="ff"></view>
+      <view class="nav-k">
+        <view class="nav" bind:tap="goMember">成员管理</view>
+        <view class="nav" bind:tap="goInfo" wx:if="{{isaddshow}}">添加成员</view>
+        <view class="fgx" wx:if="{{isaddshow}}"></view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

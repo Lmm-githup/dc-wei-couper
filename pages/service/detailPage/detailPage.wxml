@@ -1,0 +1,43 @@
+<view class="header">
+  <view class="title">
+    <view class="head-img">
+      <image class="" src="{{user.headimgurl}}"></image>
+      <view class="txt">{{user.name}}</view>
+    </view>
+    <view class="date">{{headerdate}}</view>
+  </view>
+  <view class="chart-k">
+    <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <view class="tuli">
+    <view class="tu-k" wx:for="{{tuli}}">
+      <view class="tu" style="background-color: {{item.color}}"></view>
+      <view class="txt">{{item.txt}}</view>
+    </view>
+  </view>
+</view>
+<view class="line block">
+  <view class="title">BMI趋势</view>
+  <view class="line-k">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecline }}"></ec-canvas>
+  </view>
+</view>
+<view class="block">
+  <view class="title">历史数据</view>
+  <view class="list" wx:for="{{dataList}}">
+    <view class="top">
+      <view class="li">
+        {{item.weight_fileName}}:{{item.weight_fileValue}}{{item.weight_fileUnit}}
+      </view>
+      <view class="li">
+        {{item.height_fileName}}:{{item.height_fileValue}}{{item.height_fileUnit}}
+      </view>
+      <view class="li ls">
+        {{item.bmi_value}}Kg/m²
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="date">{{item.MEAS_TIME}}</view>
+    </view>
+  </view>
+</view>

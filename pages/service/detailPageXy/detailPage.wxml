@@ -1,0 +1,52 @@
+<view class="header">
+  <view class="title">
+    <view class="head-img">
+      <image class="" src="{{user.headimgurl}}"></image>
+      <view class="txt">{{user.name}}</view>
+    </view>
+    <view class="date">{{topData.datetime}}</view>
+  </view>
+  <view class="chart-k">
+    <view class="cc-ks">
+      <view class="s">收缩压</view>
+      <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+      <view class="s">舒张压</view>
+    </view>
+    <view class="txt">
+      <view class="t">收缩压{{topData.systolic}}</view>
+      <view class="t">舒张压{{topData.diastolic}}</view>
+      <view class="t">{{topData.type}}</view>
+    </view>
+  </view>
+  <view class="tuli">
+    <view class="tu-k" wx:for="{{tuli}}">
+      <view class="tu" style="background-color: {{item.color}}"></view>
+      <view class="txt">{{item.txt}}</view>
+    </view>
+  </view>
+</view>
+<view class="line block">
+  <view class="title">血压趋势</view>
+  <view class="line-k">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecline }}"></ec-canvas>
+  </view>
+</view>
+<view class="block">
+  <view class="title">历史数据</view>
+  <view class="list" wx:for="{{dataList}}">
+    <view class="top">
+      <view class="li">
+        {{item.systolic_fileName}}:{{item.systolic_fileValue}}{{item.systolic_fileUnit}}
+      </view>
+      <view class="li">
+        {{item.diastolic_fileName}}:{{item.diastolic_fileValue}}{{item.diastolic_fileUnit}}
+      </view>
+      <view class="li ls">
+        {{item.bmi_value}}
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="date">{{item.MEAS_TIME}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<image class="head" src="{{headimg}}"></image>
+<view class="search">
+  <view class="ink">
+    <input type="text" placeholder="请输入药品名称" placeholder-style="color: #868686" bindinput="inputKeyWord" />
+    <view class="ic"></view>
+  </view>
+  <view class="sys" bind:tap="goScan">
+    <view class="icon"></view>
+    <view class="tx">扫一扫</view>
+  </view>
+</view>
+<view class="btn" bind:tap="goFind">查询</view>
+<view class="kks">
+  <navigator class="navs" url="/pages/mine/findmedicine/searchlog/searchlog" hover-class="navigator-hover" open-type="navigate">找药记录</navigator>
+</view>
+<view class="tag-k" wx:if="{{logList.length!=0}}">
+  <view class="title">搜索记录</view>
+  <view class="tag-ks">
+    <view class="tag" bind:tap="tagSearch" wx:for="{{logList}}" wx:for-index="idx" wx:key="" wx:if="{{idx<10}}" data-id="{{item.memberId}}" data-txt="{{item.keyword}}">{{item.keyword}}</view>
+  </view>
+</view>

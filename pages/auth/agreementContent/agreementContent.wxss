@@ -1,0 +1,18 @@
+/* pages/auth/agreementContent/agreementContent.wxss */
+.agreementContent{
+  width:80%;
+  margin: 0 auto;
+}
+.Name{
+  text-align: center;
+}
+.Content{
+  font-size: 27rpx;
+  line-height: 45rpx;
+  margin-top:20rpx;
+}
+.spot{
+  font-size: 29rpx;
+  font-weight: bold;
+  margin-top:30rpx;
+}

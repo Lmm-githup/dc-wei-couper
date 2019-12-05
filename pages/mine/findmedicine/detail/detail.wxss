@@ -1,0 +1,92 @@
+page{
+  background-color: #eef0f3;
+}
+.banner{
+  height: 398rpx;
+  border-top: 1px solid #eef0f3;
+  border-bottom: 1px solid #eef0f3;
+}
+.banner swiper{
+  width: 100%;
+  height: 100%;
+}
+.banner swiper-item{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner swiper-item image{
+  width: 485rpx;
+  height: 260rpx;
+}
+.title{
+  font-size: 26rpx;
+  color: #333333;
+  height: 81rpx;
+  line-height: 81rpx;
+  padding-left: 30rpx;
+  background-color: #fff;
+}
+.desc{
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding-top: 26rpx;
+  padding-bottom: 26rpx;
+  padding: 26rpx 30rpx;
+}
+.desc .ti{
+  text-align: center;
+  font-size: 0;
+  position: relative;
+}
+.desc .ti::before{
+  content: '';
+  width: 692rpx;
+  height: 1px;
+  background-color: #e3e3e3;
+  top: 50%;
+  left: 50%;
+  margin-left: -346rpx;
+  z-index: 1;
+  position: absolute;
+}
+.desc .ti .txt{
+  display: inline;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  color: #505050;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+.desc .con{
+  margin-top: 17rpx;
+}
+.desc .con .list{
+  margin-bottom: 27rpx;
+}
+.desc .con .list .na{
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 16rpx;
+  position: relative;
+}
+.desc .con .list .na::before{
+  content: '';
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  margin-top: -3rpx;
+  background-color: #0DA982;
+}
+.desc .con .list .dds{
+  color: #868686;
+  font-size: 24rpx;
+  padding-left: 30rpx;
+}

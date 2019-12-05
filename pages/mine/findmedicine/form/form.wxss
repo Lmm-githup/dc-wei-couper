@@ -1,0 +1,100 @@
+page{
+  background-color: #eef0f3;
+}
+.s{
+  padding-top: 17rpx;
+}
+.block{
+  background-color: #fff;
+  margin-bottom: 14rpx;
+}
+.list{
+  height: 88rpx;
+  border-bottom: 1px solid #eef0f3;
+  display: flex;
+  align-items: center;
+}
+.list.else{
+  height: 150rpx;
+  align-items: flex-start;
+}
+.list.else .name{
+  padding-top: 20rpx;
+}
+.list.else textarea{
+  height: 100%;
+  padding: 20rpx 30rpx 20rpx 0;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #868686;
+  margin-left: 10rpx;
+}
+.block .list:nth-last-child(1){
+  border: none;
+}
+.list .name{
+  margin-left: 22rpx;
+  width: 167rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.list .name.ts::after{
+  content: '*';
+  color: #dd3c27;
+}
+.list input,.list input.i-p{
+  font-size: 24rpx;
+  color: #868686;
+}
+.block.img{
+  height: auto;
+  padding: 29rpx 26rpx;
+}
+.list-img .title{
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 17rpx;
+}
+.list-img .upload{
+  width: 130rpx;
+  height: 130rpx;
+  border: 1px dashed #a0a0a0;
+  position: relative;
+}
+.list-img .upload .kk{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.list-img .upload .kk image{
+  width: 100%;
+  height: 100%;
+}
+.list-img .upload .kk input{
+  display: none;
+}
+.list-img .upload .icon{
+  width: 48rpx;
+  height: 43rpx;
+  margin: 26rpx auto 19rpx auto;
+  background: url(https://app.fjxzj.com/weimob/ci-icon.png) no-repeat;
+  background-size: 100% 100%;
+}
+.list-img .upload .txt{
+  text-align: center;
+  font-size: 18rpx;
+  color: #505050;
+}
+.btn{
+  width: 600rpx;
+  height: 70rpx;
+  margin: 130rpx auto 80rpx auto;
+  text-align: center;
+  line-height: 70rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  background-color: #21469b;
+  border-radius: 6rpx;
+}

@@ -1,0 +1,75 @@
+<view class="con" style="height:{{scrollHeight}}rpx">
+  <view class="cn-mine">
+    <view class="header">
+      <view class="co">
+        <view class="txt {{action[0]}}" data-type='已领取' bind:tap="tabNav">已领取</view>
+      </view>
+      <view class="co">
+        <view class="txt {{action[1]}}" data-type='已使用' bind:tap="tabNav">已使用</view>
+      </view>
+      <view class="co">
+        <view class="txt {{action[2]}}" data-type='已过期' bind:tap="tabNav">已过期</view>
+      </view>
+    </view>
+    <scroll-view class="scroll {{action[0]}}" scroll-y data-type='' bindscrolltolower="goBottom">
+      <view class="zw"></view>
+      <view class="cn-list" wx:for="{{ylqList}}" data-id="{{item.voucherId}}" wx:key="{{index}}" bind:tap="goDetail">
+        <image class="img" wx:if="{{item.VOUCHERTYPE=='折扣券'}}" src="../../../../static/images/can-con3.png"></image>
+        <image class="img" wx:if="{{item.VOUCHERTYPE=='代金券'}}" src="../../../../static/images/can-con2.png"></image>
+        <image class="img" wx:if="{{item.VOUCHERTYPE=='礼品券'}}" src="../../../../static/images/can-con4.png"></image>
+        <image class="img" wx:if="{{item.VOUCHERTYPE=='固定价格券'}}" src="../../../../static/images/can-con1.png"></image>
+        <view class="vv pr">
+          <view class="c">{{item.leftTitle}}</view>
+          <view class="type-s">{{item.leftTitle_sub}}</view>
+        </view>
+        <view class="vv cc">
+          <view class="tt">{{item.centerTitle}}</view>
+          <view class="ds">{{item.centerSubTitle}}</view>
+          <view class="date">{{item.centerDatePeriod}}</view>
+        </view>
+        <view class="bt">立即使用</view>
+      </view>
+      <view class="tip-txt">{{tiptxt}}</view>
+    </scroll-view>
+    <scroll-view class="scroll {{action[1]}}" scroll-y data-type='已使用' bindscrolltolower="goBottom">
+      <view class="zw"></view>
+      <view class="cn-list" wx:for="{{ysyList}}" wx:key="{{index}}">
+        <image class="img" src="../../../../static/images/can-con1-sy.png"></image>
+        <view class="vv pr">{{item.leftTitle}}</view>
+        <view class="vv cc">
+          <view class="tt">{{item.centerTitle}}</view>
+          <view class="ds">{{item.centerSubTitle}}</view>
+          <view class="date">{{item.centerDatePeriod}}</view>
+        </view>
+        <!-- <view class="bt">立即使用</view> -->
+      </view>
+      <view class="tip-txt">{{tiptxt}}</view>
+    </scroll-view>
+    <scroll-view class="scroll {{action[2]}}" scroll-y data-type='已过期' bindscrolltolower="goBottom">
+      <view class="zw"></view>
+      <view class="cn-list" wx:for="{{ygqList}}" wx:key="{{index}}">
+        <image class="img" src="../../../../static/images/can-con1-gq.png"></image>
+        <view class="vv pr">{{item.leftTitle}}</view>
+        <view class="vv cc">
+          <view class="tt">{{item.centerTitle}}</view>
+          <view class="ds">{{item.centerSubTitle}}</view>
+          <view class="date">{{item.centerDatePeriod}}</view>
+        </view>
+        <!-- <view class="bt">立即使用</view> -->
+      </view>
+      <view class="tip-txt">{{tiptxt}}</view>
+    </scroll-view>
+  </view>
+</view>
+<view class="footer">
+  <view class="mine action" data-index='0'>
+    <image class="noac" src="../../../../static/images/coupon-1.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-1-ac.png"></image>
+    <view class="txt">我的优惠券</view>
+  </view>
+  <view class="center" data-index='1' bind:tap="tabCenter">
+    <image class="noac" src="../../../../static/images/coupon-2.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-2-ac.png"></image>
+    <view class="txt">领券中心</view>
+  </view>
+</view>

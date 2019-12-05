@@ -1,0 +1,29 @@
+<!-- <view class="m">
+  <view class="head" data-phone="{{system.kefu_telephone}}" bind:tap="goPhone">
+    客服电话
+    <view class="icon">立即拨打</view>
+  </view>
+</view> -->
+<view class="forms">
+  <view class="block">
+    <view class="tit">请选择反馈类型
+      <view class="s">（必选）：</view>
+    </view>
+    <view class="radio-list">
+      <view class="ra {{item.class}}" data-index="{{index}}" wx:for="{{tagList}}" bind:tap="chooseType">{{item.name}}</view>
+    </view>
+    <view class="comm">
+      <textarea maxlength="100" bindinput="comChange"></textarea>
+      <view class="num">{{num}}/100</view>
+    </view>
+    <view class="txttxt">{{tiptxt}}</view>
+  </view>
+  <view class="block nopadding">
+    <view class="phone">联系电话：{{phone}}</view>
+  </view>
+  <view class="but" bind:tap="formSub">确认提交</view>
+  <!-- <view class="ts">
+    <view class="ss" bind:tap="goLog">反馈记录</view>
+  </view> -->
+  <view class="but" bind:tap="goLog">反馈答复详情</view>
+</view>

@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="k">
+  <scroll-view class="con" scroll-y>
+    <view class="top">
+      <view class="card">
+        <view class="c-top">
+          <view class="ico">
+            <image class="" src="{{userInfo.headimgurl}}" bind:tap="goInformation">
+            </image>
+            <view class="na">
+              <view class="name">
+                <view class="txts">您好！{{userInfo.name}}</view>
+                <image wx:if="{{userInfo.is_plus!=0}}" class="cs" src="../../../static/images/vplus.png"></image>
+                <view class="ynk">{{userInfo.tier}}</view>
+              </view>
+              <view class="desc" wx:if="{{userInfo.SAVE_AMOUNT==''}}">今年已累计为您节省0元</view>
+              <view class="desc" wx:else>今年已累计为您节省{{userInfo.SAVE_AMOUNT}}元</view>
+            </view>
+          </view>
+          <view class="djs">
+            <view class="jdt-k {{lv}}">
+              <view class="jd-bg"></view>
+              <view class="jd-ac"></view>
+              <view wx:for="{{setting.Siebel_memberTier}}" class="di d{{index}}"></view>
+            </view>
+            <view class="co-k">
+              <view class="djs-co" wx:for="{{setting.Siebel_memberTier}}">{{item}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+      </view>
+      <view wx:if="{{fjObj.num>0}}" class="top-tip t{{fjObj.lv}}">还需{{fjObj.num}}值(约消费{{fjObj.num}}元)可升至{{fjObj.name}}</view>
+    </view>
+    <view class="pay-con">
+      <image class="btn-fz" mode="aspectFit" src="../../../static/images/paycode-fz.png" bind:tap="goFz"></image>
+      <view class="image-k {{ercodeani}}">
+        <view class="er-k">
+          <image class="erm" mode="aspectFit" src="{{qrcode}}"></image>
+          <view class="ertdt">{{qrtxt}}</view>
+        </view>
+        <view class="sks">
+          <image class="txm" mode="aspectFit" src="{{barcode}}"></image>
+        </view>
+      </view>
+      <view class="tipps">使用会员卡时请向收银员出示该页面</view>
+    </view>
+    <view class="btn" bind:tap="goShare">我要代言</view>
+  </scroll-view>
+</view>

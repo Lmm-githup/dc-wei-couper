@@ -1,0 +1,13 @@
+<view class="desc">
+为了验证您的身份，请输入要更换的手机号码后获取并填写新的验证码
+</view>
+<form bindsubmit="formSubmit">
+  <view class="list">
+    <input name="phone" type="number" bindinput="valChange" class="phone" placeholder-class="input-placeholder" placeholder="请输入要更换的手机号码" value="{{ phone }}" />
+    <view class="sendcode {{noclick}}" bind:tap="getPhoneCode">{{codetxt}}</view>
+  </view>
+  <view class="list">
+    <input name="code" type="number" class="code" placeholder-class="input-placeholder" placeholder="请输入手机验证码"/>
+  </view>
+  <button class="sub" form-type="submit">更换手机号码</button>
+</form>

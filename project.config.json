@@ -1,0 +1,361 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx8794ae9fe2f2b8ff",
+	"projectname": "%E5%BE%AE%E4%BC%9A%E5%91%98",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 31,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试分享链接",
+					"pathName": "pages/auth/authorize/authorize",
+					"query": "inviter=123",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "测试导购链接",
+					"pathName": "pages/auth/guideenter/guideenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试分享券链接",
+					"pathName": "pages/auth/authorize/authorize",
+					"query": "sceneId=123&voucherId=456&voucherScode=789",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "海报下载",
+					"pathName": "pages/mine/share/downImg/downImg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "扫码登录",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": 1047
+				},
+				{
+					"id": 5,
+					"name": "临时页面调整",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": 1047
+				},
+				{
+					"id": -1,
+					"name": "小程序审核专用登录页面",
+					"pathName": "pages/auth/loginByDemoPhone/loginByPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店进入测试",
+					"pathName": "pages/auth/authorize/authorize",
+					"query": "storeNo=123",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "测试五参数",
+					"pathName": "pages/auth/authorize/authorize",
+					"query": "",
+					"scene": 1047
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/agreementContent/agreementContent",
+					"pathName": "pages/auth/agreementContent/agreementContent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginByPhone/loginByPhone",
+					"pathName": "pages/auth/loginByPhone/loginByPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginByDemoPhone/loginByPhone",
+					"pathName": "pages/auth/loginByDemoPhone/loginByPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/index/index",
+					"pathName": "pages/mine/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/integral/integral",
+					"pathName": "pages/mine/integral/integral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/H5page/H5page",
+					"pathName": "pages/H5page/H5page",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/H5page/H5page",
+					"pathName": "pages/H5page/H5page",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/authorizeNew/authorize",
+					"pathName": "pages/auth/authorizeNew/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/H5page/H5page",
+					"pathName": "pages/H5page/H5page",
+					"scene": null
+				}
+			]
+		}
+	}
+}

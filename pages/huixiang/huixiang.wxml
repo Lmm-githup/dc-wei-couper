@@ -1,0 +1,18 @@
+<!-- <web-view src="{{url}}" bindmessage=""></web-view> -->
+<!-- <swiper bindchange='pageChange' class="" indicator-dots="{{true}}" indicator-active-color="#0045a2" indicator-color="#fff">
+<swiper-item class="" item-id="" wx:for="{{list}}">
+  <scroll-view class="scroll" scroll-y="{{true}}">
+    <image wx:if="{{index==0}}" bind:tap="showimg" class="" style="height:{{imgheight}}px;width:{{imgwidth}}px;" src="{{item.thumb}}" mode="aspectFill" data-url="{{item.thumb}}" lazy-load="false" binderror="" bindload="imgLoad">
+    </image>
+    <image wx:else bind:tap="showimg" class="" style="height:{{imgheight}}px;width:{{imgwidth}}px;" src="{{item.thumb}}" mode="aspectFill" data-url="{{item.thumb}}" lazy-load="false" binderror="">
+    </image>
+  </scroll-view>
+</swiper-item>
+</swiper>
+<view class="page">{{nowpage}}/{{page}}</view> -->
+<block wx:for="{{list}}">
+  <image wx:if="{{index==0}}" bind:tap="showimg" class="" style="width:100%" src="{{item.thumb}}" mode="widthFix" data-url="{{item.thumb}}" lazy-load="false" binderror="">
+  </image>
+  <image wx:else bind:tap="showimg" class="" style="width:100%" src="{{item.thumb}}" mode="widthFix" data-url="{{item.thumb}}" lazy-load="false" binderror="">
+  </image>
+</block>

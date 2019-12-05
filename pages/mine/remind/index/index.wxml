@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="k">
+  <scroll-view class="con" scroll-y>
+    <view class="top">
+      <view class="card">
+        <view class="c-top">
+          <view class="ico">
+            <image class="" src="" bind:tap="goInformation">
+            </image>
+            <view class="na">
+              <view class="name">
+                <view class="txts">您好！原来还执着</view>
+                <image class="cs" src="../../../../static/images/vplus.png"></image>
+                <view class="ynk">银卡</view>
+              </view>
+            </view>
+          </view>
+          <view class="per-info">
+            <view class="cc">
+              <view class="na"><view>0</view>岁</view>
+              <view class="de">年龄</view>
+            </view>
+            <view class="cc">
+              <view class="na"><view>160</view>cm</view>
+              <view class="de">身高</view>
+            </view>
+            <view class="cc">
+              <view class="na"><view>47</view>kg</view>
+              <view class="de">体重</view>
+            </view>
+          </view>
+        </view>
+        <view class="c-b">
+          <image class="c" src="../../../../static/images/bigv.png"></image>
+          <view class="tb">PLUS会员</view>
+          <view class="tm">开通即享7大特权</view>
+          <view class="kt">敬请期待</view>
+        </view>
+        <view class="logo-tb"></view>
+      </view>
+    </view>
+    <view class="block">
+      <view class="title">
+        今日服药
+        <view class="addm" bind:tap="showAlert">新增药品</view>
+      </view>
+      <view class="m-list">
+        <image class="aimg" mode="aspectFit" src="../../../../static/images/yjfk.png"></image>
+        <view class="ri">
+          <view class="ti">氨加黄敏胶囊</view>
+          <view class="pe">每天提醒2次</view>
+          <view class="ts">提醒时间</view>
+          <view class="time">下午15:12</view>
+        </view>
+        <view class="btn">删除</view>
+      </view>
+    </view>
+    <view class="block s">
+      <view class="title">关注标签</view>
+      <view class="bc-k">
+        <view class="bc action">消化系统</view>
+        <view class="bc">呼吸系统</view>
+        <view class="bc">五官科</view>
+        <view class="bc">皮肤科</view>
+        <view class="bc">儿科</view>
+        <view class="bc">消化系统</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="al-bg {{showalert}}" bind:tap="escAlert"></view>
+  <view class="addmi {{showalert}}">
+    <view class="title">新增药品</view>
+    <view class="list">
+      <view class="des">药品名称</view>
+      <view class="cz" bind:tap="chooseMedicine">{{medicine.name}}</view>
+    </view>
+    <view class="list">
+      <view class="des">提醒方式</view>
+      <view class="cz" bind:tap="chooseType">{{medicine.type}}</view>
+    </view>
+    <view class="list">
+      <view class="des">服药频率</view>
+      <view class="cz" bind:tap="choosePer">{{medicine.per}}</view>
+    </view>
+    <view class="btn-k">
+      <view class="btn esc" bind:tap="escAlert">取消</view>
+      <view class="btn sub">确认</view>
+    </view>
+  </view>
+</view>

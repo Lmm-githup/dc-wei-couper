@@ -1,0 +1,48 @@
+<!-- <view class="list">
+  <view class="top">
+    <image class="" src="../../../static/images/header-zsdg.png" mode="aspectFit"></image>
+    <view class="txt">
+      <view class="name">{{user.StaffName}}</view>
+      <view class="num">工号：{{user.StaffNumber}}</view>
+      <view class="num">手机号：{{user.StaffPhone}}</view>
+      <view class="num">门店名称：{{user.store_name}}</view>
+      <view class="num">门店地址：{{user.store_address}}</view>
+    </view>
+  </view>
+  <view class="bottom" wx:if="{{isshow}}">
+    <view class="left" bind:tap="goH5">在线咨询</view>
+    <view class="right" bind:tap="callPhone" data-phone="{{user.StaffPhone_call}}">电话咨询</view>
+  </view>
+</view>
+<view class="tips">金卡/铂金/钻石会员，享专属健康顾问服务，如有需要可直接拨打电话联系我！</view> -->
+<view class="top-tip">
+  <view class="con">
+    <view class="ti">温馨提示：</view>
+    <view class="ts">{{tip}}</view>
+  </view>
+</view>
+<view class="desc">
+  <!-- <image class="left" src="../../../static/images/dg-icon.png" mode="aspectFit"></image> -->
+	<view class="left"></view>
+  <view class="con-r">
+    <view class="li">姓名：{{user.StaffName}}</view>
+    <view class="li">工号：{{user.StaffNumber}}</view>
+    <view class="li">手机号：{{user.StaffPhone}}</view>
+    <view class="li">门店名称：{{user.store_name}}</view>
+    <view class="li">门店地址：{{user.store_address}}</view>
+  </view>
+</view>
+<view class="bottom-elee">
+  <view class="bottom">
+    <view class="btn l1" bind:tap="goH5">
+      <image class="icon" src="../../../static/images/dg-tip.png"></image>
+      <view class="c">在线咨询</view>
+      <view class="tipps t" hidden="{{userInfo.red_chat == 0}}">{{userInfo.num_chat}}</view>
+    </view>
+    <view class="btn l2" bind:tap="callPhone" data-phone="{{user.StaffPhone_call}}">
+      <image class="icon" src="../../../static/images/dg-phone.png"></image>
+      <view class="c">电话咨询</view>
+    </view>
+  </view>
+  <view class="tips-el">{{tipbottom}}</view>
+</view>

@@ -1,0 +1,22 @@
+<view class="con">
+  <view class="title">
+    <view class="left">反馈类型：{{pdata.SR_SUB_TYPE}}</view>
+    <view class="status action" wx:if="{{pdata.SR_STATUS=='已回复'}}">{{pdata.SR_STATUS}}</view>
+    <view class="status" wx:else>{{pdata.SR_STATUS}}</view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">问题描述：{{pdata.SR_QUESTION}}</view>
+      <view class="date">{{pdata.SR_CREATE_DATE}}</view>
+    </view>
+  </view>
+  <view  class="list" style="border: none">
+    <view class="cc" wx:if="{{pdata.SR_ANSWER==null}}">
+      <view class="s">暂无回复</view>
+    </view>
+    <view class="cc" wx:else>
+      <view class="ti">回复内容：{{pdata.SR_ANSWER}}</view>
+      <view class="date">{{pdata.REPLY_DATE}}</view>
+    </view>
+  </view>
+</view>

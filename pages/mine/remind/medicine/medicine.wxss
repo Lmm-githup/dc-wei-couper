@@ -1,0 +1,88 @@
+page{
+  background-color:#eef0f3;
+}
+.top{
+  height:200rpx;
+  background-color: #1e479c;
+  display: flex;
+  align-items: center;
+}
+.top .search-k{
+  width: 540rpx;
+  height: 60rpx;
+  background-color: #fff;
+  margin-left: 46rpx;
+  border-radius: 30rpx;
+  margin-right: 50rpx;
+}
+.top .search-k input{
+  height: 100%;
+  margin-left: 50rpx;
+  font-size: 24rpx;
+  color: #505050;
+}
+.top .sys .er{
+  width: 34rpx;
+  height: 34rpx;
+  margin: 0 auto 8rpx auto;
+  background: url(https://app.fjxzj.com/weimob/sys-icon-f.png) no-repeat;
+  background-size: 100% 100%;
+}
+.top .sys .sc{
+  text-align: center;
+  color: #ffffff;
+  font-size: 22rpx;
+}
+/* m-list */
+.m-list{
+  margin: 0 34rpx;
+  padding: 27rpx 0;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #dbdcdf;
+}
+.m-list .btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20rpx;
+  color: #505050;
+  border: 1px solid #505050;
+  width: 100rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+}
+.m-list image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.m-list .ri{
+  margin-left:22rpx;
+}
+.m-list .ti{
+  font-size: 28rpx;
+  color: #505050;
+  margin-bottom:13rpx;
+}
+.m-list .pe{
+  height: 38rpx;
+  line-height: 38rpx;
+  padding-left: 40rpx;
+  background: url(https://app.fjxzj.com/weimob/icon-tx.png) no-repeat left center;
+  background-size: 28rpx 28rpx;
+  margin-bottom: 13rpx;
+  font-size: 26rpx;
+  color: #f49716;
+}
+.m-list .ts,
+.m-list .time{
+  font-size: 22rpx;
+  color: #505050;
+  line-height: 1;
+}
+.m-list .ts{
+  margin-bottom: 12rpx;
+}
+/* m-list */

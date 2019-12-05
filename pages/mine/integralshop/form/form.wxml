@@ -1,0 +1,28 @@
+<view class="f-d">
+  <image class="f" src="" mode="aspectFit"></image>
+  <view class="des">
+    <view class="name">康百杰冰箱贴</view>
+    <view class="g">规格：2个</view>
+  </view>
+</view>
+<view class="address">青岛市崂山区松岭路</view>
+<view class="fg"></view>
+<view class="bl">
+  <view class="list">
+    <view class="name">配送方式：</view>
+    <view class="con">快递</view>
+  </view>
+  <view class="list">
+    <view class="name">运费</view>
+    <view class="con">+6.00</view>
+  </view>
+  <view class="list">
+    <view class="name">总计</view>
+    <view class="con jf">99积分</view>
+  </view>
+</view>
+<view class="zw"></view>
+<view class="set">
+  <view class="left">99积分</view>
+  <view class="btn">提交订单</view>
+</view>

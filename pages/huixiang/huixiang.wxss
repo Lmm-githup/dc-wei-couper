@@ -1,0 +1,49 @@
+/* pages/huixiang/huixiang.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* swiper image{
+  width: 100%;
+  height: 93vh;
+} */
+swiper .wx-swiper-dots.wx-swiper-dots-horizontal{
+  background-color: rgba(0, 0, 0, .8);
+  width: 100%;
+  padding: 3vh 0;
+  bottom: 0;
+}
+swiper .scroll{
+  width: 100%;
+  height: calc(100% - 7vh);
+}
+swiper .wx-swiper-dot{
+ width:40rpx;
+ display: inline-flex;
+ height: 1vh;
+ margin-left: 20rpx;
+ justify-content:space-between;
+}
+swiper .wx-swiper-dot::before{
+ content: '';
+ flex-grow: 1; 
+ background: #fff;
+ border-radius: 8rpx;
+}
+swiper .wx-swiper-dot-active::before{
+ background: #0045a2;
+}
+.page{
+  position: fixed;
+  height: 7vh;
+  line-height: 7vh;
+  bottom: 0;
+  right: 6vw;
+  font-size: 26rpx;
+  color: #fff;
+}

@@ -1,0 +1,50 @@
+<view class="k">
+  <view class="block">
+    <view class="title">
+      <view class="txt">健康检测</view>
+      <view class="tip">·{{daytxt}}</view>
+    </view>
+    <view class="list-k">
+      <view class="list" data-type="bmi" bind:tap="goDetail">
+        <image class="icon" src="../../../static/images/jc-bmi.png"></image>
+        <view class="txt">BMI检测</view>
+      </view>
+      <view class="list" data-type="glu" bind:tap="goDetail">
+        <image class="icon" src="../../../static/images/jc-xt.png"></image>
+        <view class="txt">血糖检测</view>
+      </view>
+      <view class="list" data-type="bp" bind:tap="goDetail">
+        <image class="icon" src="../../../static/images/jc-xy.png"></image>
+        <view class="txt">血压检测</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="block">
+    <view class="title">
+      <view class="txt">数据分析</view>
+    </view>
+    <view class="list-k">
+      <view class="list" data-type='bmi' bind:tap="goFx">
+        <image class="icon" src="../../../static/images/fx-bmi.png"></image>
+        <view class="txt">BMI指数分析</view>
+      </view>
+      <view class="list" data-type='glu' bind:tap="goFx">
+        <image class="icon" src="../../../static/images/fx-xt.png"></image>
+        <view class="txt">血糖指数分析</view>
+      </view>
+      <view class="list" data-type='bp' bind:tap="goFx">
+        <image class="icon" src="../../../static/images/fx-xy.png"></image>
+        <view class="txt">血压指数分析</view>
+      </view>
+      <!-- <view class="list">
+        <image class="icon" src="../../../static/images/fx-mz.png"></image>
+        <view class="txt">面诊仪分析</view>
+      </view>
+      <view class="list">
+        <image class="icon" src="../../../static/images/fx-xl.png"></image>
+        <view class="txt">心率仪分析</view>
+      </view> -->
+    </view>
+  </view>
+</view>

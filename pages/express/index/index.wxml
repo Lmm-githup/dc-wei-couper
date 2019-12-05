@@ -1,0 +1,3 @@
+<view class="nopage">
+  <view class="text" bind:tap="goDetail">点击进入</view>
+</view>

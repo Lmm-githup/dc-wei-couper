@@ -1,0 +1,171 @@
+page{
+  background-color: #eef0f3;
+  height: 100%;
+}
+.no-m{
+  height: 100%;
+}
+.search{
+  height: 190rpx;
+  display: flex;
+  width: 600rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.search .ink{
+  display: flex;
+  width: 500rpx;
+  height: 60rpx;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #0045a2;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+}
+.search .ink input{
+  font-size: 24rpx;
+  color: #868686;
+  width: 417rpx;
+  margin-left: 16rpx;
+}
+.search .ink .ic{
+  width: 30rpx;
+  height: 30rpx;
+  background: url(https://app.fjxzj.com/weimob/search-icon.png) no-repeat;
+  background-size: 100%;
+  margin-right: 18rpx;
+}
+.search .sys .icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin: 0 auto 10rpx auto;
+  background: url(https://app.fjxzj.com/weimob/sys-icon.png) no-repeat;
+  background-size: 100%;
+}
+.search .sys .tx{
+  font-size: 22rpx;
+  color: #0045a2;
+  line-height: 1;
+  text-align: center;
+}
+.no-m .icon{
+  width: 140rpx;
+  height: 128rpx;
+  margin: 150rpx auto 42rpx auto;
+  background: url(https://app.fjxzj.com/weimob/no-m.png) no-repeat;
+background-size: 100% 100%;
+}
+.no-m .tex{
+  margin-top: 47rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #a6a6a6;
+}
+.btn{
+  width: 600rpx;
+  height: 70rpx;
+  margin: 220rpx auto 80rpx auto;
+  text-align: center;
+  line-height: 70rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  background-color: #21469b;
+  border-radius: 6rpx;
+}
+.m .head{
+  height: 76rpx;
+  padding: 0 78rpx;
+  background: url(https://app.fjxzj.com/weimob/ic-phone-q.png) no-repeat;
+  background-size: 38rpx 38rpx;
+  background-position: 30rpx center;
+  font-size: 26rpx;
+  color: #333333;
+  line-height: 76rpx;
+  background-color: #f0ddc4;
+}
+.m .head .s{
+  display: inline;
+  color: #0045a2;
+}
+.m .tag-k{
+  padding: 21rpx 36rpx 11rpx 36rpx;
+  overflow: hidden;
+}
+.m .tag-k .k{
+  width: 702rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.m .tag-k .tag{
+  margin-bottom: 10rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  border: 1px solid #0045a2;
+  border-radius: 23rpx;
+  background-color: #becee3;
+  color: #0045a2;
+  padding: 0 22rpx;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+.list{
+  background-color: #fff;
+  margin-bottom: 13rpx;
+  padding: 54rpx 50rpx 12rpx 42rpx
+}
+.list .top{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.list .top image{
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #21469b;
+  margin-right: 23rpx;
+}
+.list .top .txt{
+  font-size: 22rpx;
+  color: #868686;
+}
+.list .top .txt .title{
+  line-height: 1;
+  margin-bottom: 17rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.list .top .num{
+  position: absolute;
+  right: 0;
+  bottom: -6rpx;
+  font-size: 26rpx;
+  color: #f49716;
+}
+.list .bottom{
+  margin-top: 42rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.list .bottom .tn{
+  font-size: 26rpx;
+  color: #333333;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.list .bottom .tn.tn1{
+  background-image: url(https://app.fjxzj.com/weimob/yszx-cion.png);
+  background-size: 26rpx 23rpx;
+  padding-left: 38rpx;
+}
+.list .bottom .tn.tn2{
+  background-image: url(https://app.fjxzj.com/weimob/yh-icons.png);
+  background-size: 26rpx 25rpx;
+  padding-left: 36rpx;
+}
+.list .bottom .tn.tn3{
+  background-image: url(https://app.fjxzj.com/weimob/kksm-icons.png);
+  background-size: 26rpx 26rpx;
+  padding-left: 38rpx;
+}

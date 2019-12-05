@@ -1,0 +1,38 @@
+<view class="con" style="height:{{scrollHeight}}rpx">
+	<view class="cn-mine cn-center">
+		<view class="header">
+			<view class="txt {{item.action}}" wx:for="{{navList}}" wx:key="{{index}}" data-type="{{item.type}}" data-index="{{index}}" bind:tap="navChange">{{item.title}}</view>
+		</view>
+		<scroll-view wx:for="{{navList}}" wx:key="{{index}}" class="scroll {{item.action}}" data-type="{{item.type}}" data-index="{{index}}" scroll-y bindscrolltolower="goBottom" bindscrolltoupper="goTop">
+			<view class="zw"></view>
+			<view class="cn-list" wx:for="{{item.data}}" wx:for-item="dlist" wx:for-index="dli" wx:key="{{dli}}">
+				<image class="img" src="../../../../static/images/can-con1.png"></image>
+				<image wx:if="{{dlist.leftType=='Image'}}" class="show" src="{{dlist.leftTitle}}" mode="aspectFit"></image>
+				<view class="img" bind:tap="goDetailPage" data-id="{{dlist.voucherId}}"></view>
+				<view wx:if="{{dlist.leftType=='Text'}}" class="vv pr">
+					<view class="c">{{dlist.leftTitle}}</view>
+					<view class="type-s">{{dlist.leftTitle_sub}}</view>
+				</view>
+				<view class="vv cc">
+					<view class="tt">{{dlist.centerTitle}}</view>
+					<view class="ds">{{dlist.centerSubTitle}}</view>
+					<view class="date">{{dlist.centerDatePeriod}}</view>
+				</view>
+				<view class="bt" bind:tap="goDetail" data-id="{{dlist.voucherId}}">立即领取</view>
+			</view>
+			<view class="tiptxt">{{tiptxt}}</view>
+		</scroll-view>
+	</view>
+</view>
+<view class="footer">
+  <view class="mine" data-index='0' bind:tap="tabMine">
+    <image class="noac" src="../../../../static/images/coupon-1.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-1-ac.png"></image>
+    <view class="txt">我的优惠券</view>
+  </view>
+  <view class="center action" data-index='1'>
+    <image class="noac" src="../../../../static/images/coupon-2.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-2-ac.png"></image>
+    <view class="txt">领券中心</view>
+  </view>
+</view>

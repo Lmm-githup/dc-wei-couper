@@ -1,0 +1,91 @@
+<view class="page">
+  <form bindsubmit="formSubmit">
+    <view class="block">
+      <view class="sa">
+        <view class="left half">
+          <view class="txt">姓名</view>
+          <input type="text" disabled="{{disabled}}" bindinput="nameChange" value="{{form.NAME}}" name="name" placeholder="请输入姓名" />
+        </view>
+        <view class="right half">
+          <view class="txt">关系</view>
+          <picker class="" disabled="{{disabled}}" mode="selector" range="{{ gx }}" value="{{ form.SHIP }}" bindchange="gxChange">
+            <view class="value">{{ form.SHIP }}</view>
+            <input style="display:none" type="text" name="ship" value="{{ form.SHIP }}" />
+          </picker>
+        </view>
+        <view class="all">
+          <view class="txt">手机号</view>
+          <input name="phone" disabled="{{disabled}}" bindinput="phoneChange" type="number" value="{{form.PHONE}}" placeholder="请输入手机号" />
+        </view>
+        <view class="half left nob">
+          <view class="txt">允许使用家庭卡成员的积分</view>
+          <view class="check" data-disabled="{{jfdisabled}}" data-type="jf" bind:tap="changeCheck">
+            <view class="ac {{form.POINT_FLG}}"></view>
+            <input type="text" style="display:none" name="pointsPermission" value="{{form.POINT_FLG}}" />
+          </view>
+        </view>
+        <!-- <view class="half right nob">
+          <view class="txt">使用优惠券</view>
+          <view class="check" data-type="yhq" bind:tap="changeCheck">
+            <view class="ac {{form.POINT_FLG}}"></view>
+          </view>
+        </view> -->
+      </view>
+    </view>
+
+    <view class="block yks" wx:if="{{pershow}}" style="display:{{mInfo.show}}">
+      <view class="title">
+        今日服药
+        <!-- <view class="addm" bind:tap="showAlert">新增药品</view> -->
+      </view>
+      <view class="m-list">
+        <image class="aimg" mode="aspectFit" src="{{mInfo.data.thumb}}"></image>
+        <view class="ri">
+          <view class="ti">{{mInfo.data.pro_name}}</view>
+          <view class="time">{{mInfo.data.remind_time}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="block yks" wx:if="{{pershow}}">
+      <view class="title">
+        <view class="txt">健康分析</view>
+      </view>
+      <view class="list-k">
+        <view class="list" data-type='bmi' data-mid='{{MEM_ID}}' bind:tap="goFx">
+          <image class="icon" src="../../../static/images/fx-bmi.png"></image>
+          <view class="txt">BMI指数分析</view>
+        </view>
+        <view class="list" data-type='glu' data-mid='{{MEM_ID}}' bind:tap="goFx">
+          <image class="icon" src="../../../static/images/fx-xt.png"></image>
+          <view class="txt">血糖指数分析</view>
+        </view>
+        <view class="list" data-type='bp' data-mid='{{MEM_ID}}' bind:tap="goFx">
+          <image class="icon" src="../../../static/images/fx-xy.png"></image>
+          <view class="txt">血压指数分析</view>
+        </view>
+        <!-- <view class="list">
+          <image class="icon" src="../../../static/images/fx-mz.png"></image>
+          <view class="txt">面诊仪分析</view>
+        </view>
+        <view class="list">
+          <image class="icon" src="../../../static/images/fx-xl.png"></image>
+          <view class="txt">心率仪分析</view>
+        </view> -->
+      </view>
+    </view>
+
+    <view class="btn-k" wx:if="{{issubshow}}">
+      <button class="sub" hidden="{{escHidden}}" bind:tap="deletPer">退出</button>
+      <button class="sub" form-type="submit">{{btntxt}}</button>
+    </view>
+  </form>
+</view>
+<view class="alert-bg {{shareShow}}" bind:tap="hiddenAlert"></view>
+<view class="alert {{shareShow}}">
+  <button open-type="share">
+    <image class="" src="../../../static/images/wx-icon.png"></image>
+  </button>
+  <view class="txt">微信好友</view>
+  <view class="btn" bind:tap="hiddenAlert">取消</view>
+</view>

@@ -1,0 +1,102 @@
+.head{
+  width: 100%;
+  height: 260rpx;
+  display: block;
+  background-color: #0454fc;
+}
+page{
+  background-color: #eef0f3;
+}
+.search{
+  height: 190rpx;
+  display: flex;
+  width: 600rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.search .ink{
+  display: flex;
+  width: 500rpx;
+  height: 60rpx;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #0DA982;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+}
+.search .ink input{
+  font-size: 24rpx;
+  color: #868686;
+  width: 417rpx;
+  margin-left: 16rpx;
+}
+.search .ink .ic{
+  width: 30rpx;
+  height: 30rpx;
+  background: url(https://app.fjxzj.com/weimob/search-icon.png) no-repeat;
+  background-size: 100%;
+  margin-right: 18rpx;
+}
+.search .sys .icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin: 0 auto 10rpx auto;
+  background: url(https://app.fjxzj.com/weimob/sys-icon.png) no-repeat;
+  background-size: 100%;
+}
+.search .sys .tx{
+  font-size: 22rpx;
+  color: #0045a2;
+  line-height: 1;
+  text-align: center;
+}
+.btn{
+  width: 600rpx;
+  height: 60rpx;
+  margin: 0 auto 60rpx auto;
+  text-align: center;
+  line-height: 60rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  background-color: #0DA982;
+  border-radius: 6rpx;
+}
+.tag-k{
+  width: 600rpx;
+  margin: auto;
+  overflow: hidden;
+}
+.tag-k .title{
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 26rpx;
+}
+.tag-ks{
+  width: 652rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag{
+  padding: 0 30rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  background-color: #ffffff;
+  margin-right: 52rpx;
+  font-size: 24rpx;
+  color: #505050;
+  white-space: nowrap;
+  margin-bottom: 32rpx;
+  border-radius: 23rpx;
+}
+.kks{
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+.kks .navs{
+  display:inline;
+  text-decoration:underline;
+  color: #36a3ff;
+  font-size: 23rpx;
+}

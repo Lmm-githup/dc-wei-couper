@@ -1,0 +1,41 @@
+<view class="header">
+  <view class="info">
+    <image class="h" src=""></image>
+    <view class="in">
+      <view class="name">名字</view>
+      <view class="phone">13333333333</view>
+    </view>
+    <view class="jf">积分：300</view>
+  </view>
+  <view class="nav">
+    <view class="na action">商品</view>
+    <view class="na">现金券</view>
+    <view class="na">服务券</view>
+    <view class="na">积分抽奖</view>
+  </view>
+</view>
+<view class="con">
+  <view class="zw"></view>
+  <view class="con-con">
+    <view class="list" bind:tap="goDetail">
+      <image class="t" src=""></image>
+      <view class="title">烧烤垃圾袋</view>
+      <view class="int">99积分</view>
+    </view>
+    <view class="list">
+      <view class="xj">
+        <view class="price">
+          <view class="ic">￥</view>
+          <view class="num">5</view>
+        </view>
+      </view>
+      <view class="title">5元现金券</view>
+      <view class="int">99积分</view>
+    </view>
+    <view class="list">
+      <image class="t" src=""></image>
+      <view class="title">烧烤垃圾袋</view>
+      <view class="int">99积分</view>
+    </view>
+  </view>
+</view>

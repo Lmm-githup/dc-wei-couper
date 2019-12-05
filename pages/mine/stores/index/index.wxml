@@ -1,0 +1,25 @@
+<view class="map">
+  <map name="" markers="{{markers}}" longitude="{{map.longitude}}"
+  latitude="{{map.latitude}}"
+  ></map>
+</view>
+
+<view class="list" wx:for="{{list}}">
+  <view class="t" data-id="{{item.ORG_ID}}" bind:tap="goDetail">
+    <!-- <image class="he" src=""></image> -->
+    <view class="txt">
+      <view class="title">{{item.ORG_NAME}}</view>
+      <view class="el time">营业时间：{{item.working_time}}</view>
+      <view class="el yb">{{item.ADDR}}</view>
+    </view>
+  </view>
+  <view class="b">
+    <view class="phone" data-phone="{{item.PHONE}}" bind:tap="phoneCall">{{item.PHONE}}</view>
+    <view class="el" data-id="{{item.ORG_ID}}" bind:tap="goDetail">门店详情</view>
+  </view>
+  <view class="jl">
+    <view class="top">{{item.distance}}千米</view>
+    <viw class="btn" data-address="{{item.ADDR}}" data-name="{{item.ORG_NAME}}" data-long="{{item.LONGITUDE}}" data-lat="{{item.LAT}}" bind:tap="goThere">去这里</viw>
+  </view>
+</view>
+<view class="loadtip">{{loadtip}}</view>

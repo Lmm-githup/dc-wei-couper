@@ -1,0 +1,50 @@
+<view class="con-ksk">
+<view class="top-img">
+  <!-- <image src="https://app.fjxzj.com/weimob/top-img.png"></image>
+  <view class="con">
+    <view class="ccs">
+      <view class="title">邀请好友扫一扫 均可获得</view>
+      <view class="desc"><view class="span">20</view>积分，可兑换全场商品</view>
+    </view>
+  </view> -->
+  <image class="new-img" src="{{pageUI.banner}}" ></image>
+</view>
+<!--
+<view class="t-title">
+  <view class="ha-bg">邀请可得</view>
+  <view class="desc">每邀请一位好友注册都将获得</view>
+</view>
+<view class="coupon">
+  <view class="num">
+    <view class="span">20</view>积分
+  </view>
+  <view class="txt">可兑换全场商品</view>
+</view>
+<view class="t-title">
+  <view class="ha-bg">好友可得</view>
+  <view class="desc">好友注册成功即可获得</view>
+</view>
+<view class="coupon">
+  <view class="num">
+    <view class="span">35</view>元套券
+  </view>
+  <view class="txt small">全场通用 5元现金券、10元代金券、20元代金券</view>
+</view>
+-->
+<image class="new-con" src="{{pageUI.con}}"></image>
+<!-- <view class="btn" bind:tap="goShare">立即分享</view> -->
+<button open-type="share" class="btn">立即分享</button>
+<view class="footer" hidden="{{false}}">
+  <view class="cs" bind:tap="goPaper">生成海报</view>
+  <view class="cs el" id="showAlert" bind:tap="showAlert">当面邀请</view>
+</view>
+<view class="alert {{alert}}">
+  <view class="bg" bind:tap="hiddenAlert"></view>
+</view>
+<view class="consa {{alert}}">
+  <view class="title">邀请好友扫一扫 均可获得</view>
+  <view class="desc"><view class="span">20积分</view>可兑换全场商品</view>
+  <image src="{{wxCode}}" alt=""></image>
+  <view class="esc" bind:tap="hiddenAlert">取消</view>
+</view>
+</view>

@@ -1,0 +1,7 @@
+<view class="list" wx:for="{{list}}" data-id="{{item.DRUG_ID}}" bind:tap="goDetail">
+  <view class="left">
+    <view class="title">{{item.DRUG_NAME}}</view>
+    <view class="else">{{item.CREATED}}</view>
+  </view>
+  <view class="right">{{item.XZJ_STATU}}</view>
+</view>

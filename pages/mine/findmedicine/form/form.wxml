@@ -1,0 +1,57 @@
+<form class="s" bindsubmit="formSub">
+  <view class="block">
+    <view class="list">
+      <view class="name ts">品名：</view>
+      <input name="drugName" type="text" placeholder="请输入药品名" placeholder-class="i-p"  value="{{reset}}"/>
+    </view>
+    <view class="list">
+      <view class="name ts">规格：</view>
+      <input name="specification" type="text" placeholder="请输入药品规格" placeholder-class="i-p" value="{{reset}}" />
+    </view>
+    <view class="list">
+      <view class="name ts">生产企业：</view>
+      <input name="manufacturer" type="text" placeholder="请输入生产企业" placeholder-class="i-p" value="{{reset}}" />
+    </view>
+    <view class="list">
+      <view class="name ts">需求盒数：</view>
+      <input name="amount" type="number" placeholder="请输入数量" placeholder-class="i-p" value="{{reset}}" />
+    </view>
+  </view>
+
+  <view class="block">
+    <view class="list">
+      <view class="name">价格：</view>
+      <input name="price" type="digit" placeholder="请输入价格" placeholder-class="i-p" value="{{reset}}" />
+    </view>
+    <view class="list">
+      <view class="name">联系人：</view>
+      <input name="contactName" type="text" placeholder="请输入联系人姓名" placeholder-class="i-p" value="{{username}}" />
+    </view>
+    <view class="list">
+      <view class="name">手机号码：</view>
+      <input name="phone" type="number" placeholder="请输入联系人手机号" placeholder-class="i-p" value="{{userphone}}" />
+    </view>
+    <view class="list else">
+      <view class="name">备注：</view>
+      <textarea name="comments" placeholder="请输入其他需求" value="{{reset}}"></textarea>
+    </view>
+  </view>
+
+
+
+  <view class="block img">
+    <view class="list-img">
+      <view class="title">药品图片：</view>
+      <view class="upload" bind:tap="uploadImg">
+        <view class="icon"></view>
+        <view class="txt">添加图片</view>
+        <view class="kk" hidden="{{imgshow}}">
+          <image class="" src="{{imageurl}}" mode="aspectFill"></image>
+          <input name="picture" type="text" value="{{imageurl}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class="btn" form-type="submit">提交</button>
+</form>

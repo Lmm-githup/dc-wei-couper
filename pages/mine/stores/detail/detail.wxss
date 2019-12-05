@@ -1,0 +1,74 @@
+page{
+  background-color: #eef0f3;
+}
+.head{
+  width: 100%;
+  height: 360rpx;
+  background-color: aqua;
+  display: block;
+}
+.desc{
+  height: 166rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+.desc .txt{
+  margin-left: 32rpx;
+  font-size: 24rpx;
+  color: #505050;
+}
+.desc .txt .title{
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 1;
+  margin-bottom: 20rpx;
+}
+.desc .txt .ph{
+  margin-bottom: 12rpx;
+}
+.desc .call{
+  margin-right: 32rpx;
+}
+.desc .call .icon{
+  width: 40rpx;
+  height: 40rpx;
+  background: url(https://app.fjxzj.com/weimob/st-phone-c.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 10rpx auto;
+}
+.desc .call .x{
+  font-size: 22rpx;
+  color: #505050;
+  text-align: center;
+}
+.add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  background-color: #ffffff;
+  margin-top: 10rpx;
+}
+.add .txt{
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #505050;
+}
+.add .btn{
+  width: 120rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  color: #ffffff;
+  font-size: 22rpx;
+  background-color: #0DA982;
+  margin-right: 30rpx;
+}
+map{
+  /* margin-top: 30rpx; */
+  width: 100%;
+  height: 300rpx;
+}

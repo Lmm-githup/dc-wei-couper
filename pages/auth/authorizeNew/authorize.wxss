@@ -1,0 +1,162 @@
+page{
+  height: 100%;
+}
+.p-k{
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 50rpx;
+}
+.p-k .logo{
+  width: 450rpx;
+  height: 110rpx;
+  display: block;
+  margin: 100rpx auto;
+}
+.p-k .txt{
+  width:75%;
+  margin: 80rpx auto;
+  line-height: 40rpx;
+  text-align: justify;
+  font-size: 29rpx;
+  color: #868686;
+  /* color: red; */
+}
+.btns{
+  width:75%;
+  /* background: pink; */
+  display: flex;
+  margin: 0rpx auto;
+  margin-top:90rpx;
+}
+.p-k button{
+  /* width: 520rpx; */
+  width:240rpx;
+  height: 80rpx;
+  background-color: #0B9472;
+  color: #ffffff;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  /* margin-left: 0; */
+}
+.alert{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.alert .bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+	z-index: 2;
+}
+.alert .con{
+	position: relative;
+	z-index: 3;
+	background-color: white;
+	width: 80%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.alert .con .title{
+	padding: 30rpx;
+	text-align: justify;
+}
+.alert .set-k{
+	display: flex;
+	align-items: center;
+	margin-top: 20rpx;
+	border-top: 1px solid #F4F4F4;
+	position: relative;
+}
+.alert .bb{
+	flex-grow: 1;
+	height: 90rpx;
+	text-align: center;
+	line-height: 90rpx;
+	border: none;
+	background-color: white;
+	font-size: 36rpx;
+}
+.alert .bb.exit{
+	border-right: 1px solid #F4F4F4;
+	color: #797979;
+}
+.alert .bb.wxs:after{
+	display: none;
+}
+.alert .bb.wxs{
+	color: #23459b;
+}
+.a{
+  width:100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 999;
+}
+.a .logo{
+  width: 400rpx;
+  height: 70rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top:300rpx;
+}
+.a .txt{
+  width: 520rpx;
+  margin: 100rpx auto 116rpx auto;
+  line-height: 40rpx;
+  text-align: justify;
+  font-size: 27rpx;
+  color: #868686;
+}
+.a .check{
+  width:70%;
+  height: 80rpx;
+  background: #23459b;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+}
+.agreement{
+  width: 77%;
+  height: 100rpx;
+  /* background: pink; */
+  margin: 40rpx auto;
+  font-size: 30rpx;
+  position: relative;
+}
+.agreement span{
+  padding-left: 10rpx;
+}
+.agreement text{
+  color:#23459b;
+}
+.wx-radio-input{
+  width:40rpx!important;
+  height: 40rpx!important;
+  /* position: absolute; */
+  /* top:-2rpx; */
+}
+.speak{
+  width:75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15rpx auto;
+  font-size: 28rpx;
+}
+icon{
+  vertical-align: middle;
+}

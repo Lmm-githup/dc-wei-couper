@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mine": "../mine/mine",
+    "center": "../center/center"
+  }
+}

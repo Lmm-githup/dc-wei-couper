@@ -1,0 +1,47 @@
+page{
+  background-color: #eef0f3;
+  padding-top: 30rpx;
+}
+.block{
+  background: #fff;
+  margin-bottom: 18rpx;
+}
+.block .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86rpx;
+  border-bottom: 1px solid #e3e3e3;
+}
+.block .title .txt{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.block .title .tip{
+  margin-right: 27rpx;
+  color: #f49716;
+  font-size: 24rpx;
+}
+.block .list-k{
+  overflow: hidden;
+  padding-top: 38rpx;
+  padding-bottom: 6rpx;
+}
+.block .list-k .list{
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 32rpx;
+}
+.block .list-k .list image{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 auto 17rpx auto;
+}
+.block .list-k .list .txt{
+  line-height: 1;
+  color: #505050;
+  font-size: 26rpx;
+  text-align: center;
+}

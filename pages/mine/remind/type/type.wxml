@@ -1,0 +1,14 @@
+<view class="tip">提醒方式</view>
+<view class="block">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio">
+      <radio value="微信提醒" color="#fff" checked="{{true}}" />
+      <view class="txt">微信提醒</view>
+    </label>
+    <label class="radio">
+      <radio value="不提醒" color="#fff" />
+      <view class="txt">不提醒</view>
+    </label>
+  </radio-group>
+</view>
+<view class="btn" bind:tap="chooseType">确认</view>

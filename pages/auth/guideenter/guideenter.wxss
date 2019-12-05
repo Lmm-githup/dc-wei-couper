@@ -1,0 +1,30 @@
+page{
+  height: 100%;
+}
+.p-k{
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 205rpx;
+}
+.p-k .logo{
+  width: 400rpx;
+  height: 70rpx;
+  display: block;
+  margin: 0 auto 150rpx auto;
+}
+.p-k .txt{
+  width: 570rpx;
+  margin: 0 auto 116rpx auto;
+  line-height: 36rpx;
+  text-align: justify;
+  font-size: 22rpx;
+  color: #868686;
+}
+.p-k button{
+  width: 520rpx;
+  height: 60rpx;
+  background-color: #23459b;
+  color: #ffffff;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}

@@ -1,0 +1,16 @@
+<view class="k">
+  <image class="logo" src="../../../static/images/login-logo.png" lazy-load="false">
+  </image>
+  <form bindsubmit="formSubmit">
+    <view class="phone txt-k">
+      <input name="phone" type="number" bindinput="valChange" placeholder="请输入手机号码" />
+      <button class="reset" form-type="reset"></button>
+    </view>
+    <view class="code txt-k">
+      <input name="code" class="code-ss" type="number" placeholder="请输入验证码" />
+      <view class="ts {{noclick}}" bind:tap="getPhoneCode">{{ codetxt }}</view>
+    </view>
+    <button class="sub" form-type="submit">登录</button>
+  </form>
+  <view class="tts">点击登录即表示您同意<view>《新紫金大药房服务条款》</view></view>
+</view>

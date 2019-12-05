@@ -1,0 +1,320 @@
+page{
+  height: 100%;
+}
+.txts,.desc{color: #DBC55B;font-weight: bold}
+.k{
+  height: 100%;
+  background-color: #ffffff;
+}
+.k .con{
+  height: 100%;
+}
+.top{
+  position: relative;
+}
+.top .sc{
+  width: 100%;
+  height: 160rpx;
+  background-color: #ffffff;
+}
+.top .sc .sc-co{
+  float: left;
+  width: 25%;
+  margin-top: 37rpx;
+  text-align: center;
+}
+.top .sc .sc-co .num{
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+.top .sc .sc-co .tit{
+  font-size: 24rpx;
+  color: #505050;
+}
+.top .sc .sc-co.quan .num{
+  margin-bottom: 5rpx;
+}
+.top .sc .sc-co.quan .ts{
+  margin-top: 5rpx;
+  font-size: 20rpx;
+  color: #868686;
+}
+.top .sc .sc-co.quan .ts .span{
+  display: inline;
+  color: #e25644;
+}
+.top .sc .sc-co .log{
+  width: 36rpx;
+  height: 36rpx;
+  margin-bottom: 16rpx;
+}
+.top .card{
+  /* height: 392rpx; */
+  overflow: hidden;
+  box-shadow: 0 0 2rpx 2rpx rgba(84, 84, 84, 0.1);
+  background-color: #0DA982;
+  position: relative;
+  padding-bottom: 37rpx;
+}
+.top .card .c-top{
+  /* height: 256rpx; */
+}
+.top .card .c-b{
+  height: 77rpx;
+  width: 680rpx;
+  text-shadow: 0 0 2px 4px rgba(106, 106, 106, 0.2);
+  font-size: 36rpx;
+  background: linear-gradient(left,#777373,#383331);
+  background: -webkit-linear-gradient(left,#777373,#383331);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -340rpx;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+  display: flex;
+  align-items: center;
+}
+.top .card .c-b .c{
+  width: 28rpx;
+  height: 27rpx;
+  margin-left: 24rpx;
+  margin-right: 12rpx;
+}
+.top .card .c-b .tb{
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #f3ca7e;
+}
+.top .card .c-b .tm{
+  font-size: 20rpx;
+  color: #f3ca7e;
+}
+.top .card .c-b .kt{
+  background-color: #efd189;
+  width: 114rpx;
+  height: 38rpx;
+  border-radius: 19rpx;
+  text-align: center;
+  line-height: 38rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -19rpx;
+  font-size: 18rpx;
+  color: #333333;
+}
+.top .card .ico{
+  padding-top: 37rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+}
+.top .card .ico image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  float: left;
+  background-color: #3c4298;
+}
+.top .card .ico .na{
+  float: left;
+  margin-top: 6rpx;
+  margin-left: 16rpx;
+  color: #333333;
+}
+.top .card .ico .na .name{
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.top .card .ico .na .name .cs{
+  width: 60rpx;
+  height: 27rpx;
+  margin: 0 15rpx 0 12rpx;
+}
+.top .card .ico .na .name .ynk{
+  height: 28rpx;
+  border-radius: 14rpx;
+  text-align: center;
+  line-height: 28rpx;
+  background-color: #9EDDCD;
+  color: #202020;
+  font-size: 18rpx;
+  padding: 0 5rpx;
+}
+.top .card .ico .na .desc{
+  font-size: 22rpx;
+}
+.top .card .djs{
+  width: 537rpx;
+  margin: 50rpx auto auto auto;
+  overflow: hidden;
+  position: relative;
+}
+.top .card .djs .jdt-k{
+  width: 510rpx;
+  height: 14rpx;
+  margin: 60rpx auto 13rpx auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.top .card .djs .jdt-k .jd-bg{
+  position: absolute;
+  height: 6rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  margin-top: -3rpx;
+  border-radius: 3rpx;
+  z-index: 1;
+}
+.top .card .djs .jdt-k .jd-ac{
+  position: absolute;
+  height: 6rpx;
+  width: 1rpx;
+  background-color: #5856d6;
+  top: 50%;
+  margin-top: -3rpx;
+  border-radius: 3rpx;
+  z-index: 2;
+}
+.top .card .djs .jdt-k .di{
+  width: 14rpx;
+  height: 14rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 14rpx;
+  position: relative;
+  z-index:3;
+}
+.top .card .djs .jdt-k.lv1 .jd-ac{
+  width: 32rpx;
+}
+.top .card .djs .jdt-k.lv2 .jd-ac{
+  width: 156rpx;
+}
+.top .card .djs .jdt-k.lv3 .jd-ac{
+  width: 280rpx;
+}
+.top .card .djs .jdt-k.lv4 .jd-ac{
+  width: 424rpx;
+}
+.top .card .djs .jdt-k.lv5 .jd-ac{
+  width: 100%;
+}
+.top .card .djs .jdt-k.lv1 .di.d1{
+  background-color:#5856d6;
+}
+.top .card .djs .jdt-k.lv2 .di.d2,
+.top .card .djs .jdt-k.lv2 .di.d1{
+  background-color:#5856d6;
+}
+.top .card .djs .jdt-k.lv3 .di.d3,
+.top .card .djs .jdt-k.lv3 .di.d2,
+.top .card .djs .jdt-k.lv3 .di.d1{
+  background-color:#5856d6;
+}
+.top .card .djs .jdt-k.lv4 .di.d4,
+.top .card .djs .jdt-k.lv4 .di.d3,
+.top .card .djs .jdt-k.lv4 .di.d2,
+.top .card .djs .jdt-k.lv4 .di.d1{
+  background-color:#5856d6;
+}
+.top .card .djs .jdt-k.lv5 .di.d5,
+.top .card .djs .jdt-k.lv5 .di.d4,
+.top .card .djs .jdt-k.lv5 .di.d3,
+.top .card .djs .jdt-k.lv5 .di.d2,
+.top .card .djs .jdt-k.lv5 .di.d1{
+  background-color:#5856d6;
+}
+.top .card .djs .co-k{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #333333;
+}
+.card .logo-tb{
+  position: absolute;
+  /* top: 37rpx;
+  right: 10rpx;
+  width: 126rpx;
+  height: 24rpx; */
+  right: 10rpx;
+  width: 170rpx;
+  height: 45rpx;
+  top:42rpx;
+  /* background: url(https://app.fjxzj.com/weimob/tx-icon.png) no-repeat; */
+  background-size: 100% 100%;
+}
+.card .logo-tb image{width: 100%;height: 100%}
+.pay-con{
+  width: 650rpx;
+  /* background-color:white; */
+  padding: 50rpx 0 60rpx 0;
+  margin: auto;
+}
+.pay-con .txm{
+  display: block;
+  width: 100%;
+  height: 150rpx;
+  margin: 0 auto 30rpx auto;
+}
+.pay-con .erm{
+  display: block;
+  width: 350rpx;
+  height: 350rpx;
+  margin: 0 auto 30rpx auto;
+}
+.pay-con .tipps{
+  text-align: center;
+  color: #505050;
+  font-size: 30rpx;
+  line-height: 1;
+}
+.pay-con .btn{
+  margin: 50rpx auto auto auto;
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: -webkit-linear-gradient(left,#f7a110,#fdbb03);
+  color: #ffffff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.ff{
+  height: 13rpx;
+  background-color: #eef0f3;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer .nav-k{
+  background-color: #ffffff;
+  height: 96rpx;
+  border-top: 1px solid #b5b5b5;
+  position: relative;
+  display: flex;
+}
+.footer .nav-k .fgx{
+  width: 1px;
+  height: 82rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -42rpx;
+  background-color: #b5b5b5;
+}
+.footer .nav-k .nav{
+  box-sizing: border-box;
+  height: 96rpx;
+  text-align: center;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  color: #505050;
+  flex-grow: 1;
+}

@@ -1,0 +1,83 @@
+<view class="header">
+  <image class="icon" src="{{userInfo.headimgurl}}"></image>
+  <view class="ba">{{userInfo.name}}</view>
+  <view class="age" wx:if="{{age>0}}">{{age}}岁</view>
+</view>
+<view class="form-con list1" hidden="{{bmi.hidden}}">
+  <view class="li">
+    <view class="s">身高 </view>
+    <input type="digit" bindinput="changeHeight" />
+    <view class="s"> 厘米</view>
+  </view>
+  <view class="li">
+    <view class="s">体重 </view>
+    <input type="digit" bindinput="changeWeight" />
+    <view class="s"> 公斤</view>
+  </view>
+</view>
+
+<view class="form-con list1" hidden="{{bp.hidden}}">
+  <view class="li">
+    <view class="s">收缩压</view>
+    <input type="digit" bindinput="ssyChange" />
+    <view class="s"> mmHg</view>
+  </view>
+  <view class="li">
+    <view class="s">舒张压 </view>
+    <input type="digit" bindinput="szyChange" />
+    <view class="s"> mmHg</view>
+  </view>
+</view>
+
+<view class="form-con list2" hidden="{{glu.hidden}}">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio">
+      <radio value="fasting" color="#fff" checked="{{true}}" />
+      <view class="txt">空腹</view>
+      <input type="digit" class="num" disabled="{{gluIsDis}}" bindinput="fastingChange" />
+      <view class="sst" style="margin-left: 0;">mmol/L</view>
+    </label>
+    <label class="radio">
+      <radio value="twohours" color="#fff" />
+      <view class="sst txt">饭后2小时</view>
+      <input type="digit" class="num" disabled="{{!gluIsDis}}" bindinput="twohoursChange" />
+      <view class="sst" style="margin-left: 0;">mmol/L</view>
+    </label>
+  </radio-group>
+</view>
+
+<view class="tip-k">
+  <view class="top" hidden="{{bmi.hidden}}">
+    <view class="title">BMI检测</view>
+    <text class="con">
+      身体质量指数(Body Mass Index,简称BMI)，使用体重公斤数除以身高米数平方得出的数字，是目前国际上常用的称量人体胖瘦程度以及是否健康的一个标准。BMI值超标，意味着必须减肥了。体质指数(BMI)=体重(kg)÷身高^2(m)
+    </text>
+  </view>
+  <view class="top" hidden="{{bp.hidden}}">
+    <view class="title">血压检测</view>
+    <text class="con">
+      血压是心脏收缩和舒张，血液通过动脉和静脉时，对血管壁产生的压力。它的数值不是固定不变的，会受到心理和生理变化因素影响。\n
+【最佳时间】\n
+①测量血压的最佳时间为早晨起床后1小时之内，或者晚上就寝之前。如果早晨测量，请在起床后1小时之内、排尿后、早餐前(如果正服用降压药，那么在服药之前)进行。如果晚上测量建议在就寝前进行。如果是其他时间，在身体和心情都处于稳定状态时测量为好。\n
+②请在每天的同一时间测量。
+    </text>
+  </view>
+  <view class="top" hidden="{{glu.hidden}}">
+    <view class="title">血糖检测</view>
+    <text class="con">
+只有在过夜禁食8~12个小时后并于次日早晨8点之前抽血所测得的血糖值才算糖值。有人称午餐前空肚子抽的血也称之为空腹血糖，是错误的，此时的血糖应称为餐前血糖。有时候由于种种原因，患者在抽血时已经接近中午，其实这时候的患者血糖值已经不能代表其平时空腹血糖的水平。\n
+餐后2小时血糖应该从曀第一口餐开始计算，因为从第一口开始，肠胃道的消化吸收功能就已经开始，从进餐中或吃完饭开始计算时间，都是不正确的，可能会影响测定结果。
+    </text>
+  </view>
+  <view class="choosetime">
+    <view class="title">时间</view>
+    <view class="con cons">
+      <view class="tx">{{timetxt}}</view>
+      <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+        <view class="choosetimes">更改时间</view>
+      </picker>
+    </view>
+  </view>
+</view>
+
+<view class="btn" bind:tap="formSub">保存数据</view>

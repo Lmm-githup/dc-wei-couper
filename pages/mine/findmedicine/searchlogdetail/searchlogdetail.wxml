@@ -1,0 +1,52 @@
+<view class="con">
+  <view class="list">
+    <view class="cc">
+      <view class="ti">产品名称：{{pdata.DRUG_NAME}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">产品价格：{{pdata.PRICE}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">生产企业：{{pdata.MANUF_ENTERPRISE}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">产品规格：{{pdata.SPECIFICATIONS}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">需求盒数：{{pdata.AMOUNT}}</view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{pdata.XZJ_STATU!=null}}">
+    <view class="cc">
+      <view class="ti">回复状态：{{pdata.XZJ_STATU}}</view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{pdata.XZJ_EXPECTEDTIME!=null}}">
+    <view class="cc">
+      <view class="ti">到货时间：{{pdata.XZJ_EXPECTEDTIME}}</view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{pdata.XZJ_TERM_OF_VALIDI!=null}}">
+    <view class="cc">
+      <view class="ti">有效日期：{{pdata.XZJ_TERM_OF_VALIDI}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cc">
+      <view class="ti">创建时间：{{pdata.CREATED}}</view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{pdata.CONMMENTS!=''}}" style="border:none">
+    <view class="cc">
+      <view class="ti">备注：{{pdata.CONMMENTS}}</view>
+    </view>
+  </view>
+</view>

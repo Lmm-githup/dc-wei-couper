@@ -1,0 +1,84 @@
+.f-d{
+  height: 220rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.f-d .f{
+  width: 176rpx;
+  height: 146rpx;
+  margin-left: 46rpx;
+  background-color: aqua;
+}
+.f-d .des{
+  margin-left: 42rpx;
+  font-size: 26rpx;
+  color: #333333;
+}
+.f-d .des .name{
+  font-size: 30rpx;
+  margin-bottom: 17rpx;
+}
+.address{
+  height: 120rpx;
+  line-height: 120rpx;
+  padding-left: 140rpx;
+  font-size: 28rpx;
+  color: #505050;
+  background: url(https://app.fjxzj.com/weimob/address.png) no-repeat;
+  background-size: 30rpx 40rpx;
+  background-position: 65rpx center;
+  border-bottom: 1px solid #e1e1e1;
+}
+.fg{
+  height: 16rpx;
+  background-color: #eef0f3;
+}
+.bl{
+  padding: 70rpx 40rpx 0 46rpx;
+}
+.bl .list{
+  margin-bottom: 47rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333333;
+}
+.bl .list .jf{
+  color: #f49716;
+  font-size: 26rpx;
+}
+.zw{
+  height: 100rpx;
+}
+.set{
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.set .left{
+  float: left;
+  width: 66.66%;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #f49716;
+  border-top: 1px solid #f49716;
+  border-bottom: 1px solid #f49716;
+}
+.set .btn{
+  height: 100rpx;
+  float: right;
+  width: 33.34%;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #f49716;
+  color: #ffffff;
+  font-size: 28rpx;
+}

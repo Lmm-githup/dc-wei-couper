@@ -1,0 +1,53 @@
+<view class="k">
+  <view class="tips" hidden="{{tips}}">暂无历史订单</view>
+  <view class="list" wx:for="{{list}}">
+    <view class="top">
+      <view class="left">
+        <view class="tt">{{item.ORDER_STORE}}</view>
+        <view class="no">小票号：{{item.ORDER_NUM}}</view>
+      </view>
+      <view class="right">
+        <view class="time">{{item.SALE_DATE}}</view>
+        <view class="bt" data-id="{{item.ORDER_ROW_ID}}" data-num="{{item.ORDER_NUM}}" bind:tap="showForm" wx:if="{{item.EVAL_FLG==='N'}}">去评价</view>
+        <view class="bx" wx:else>已评价</view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="ll" wx:for="{{item.line_list}}" wx:for-item="line">{{line.PROD_NAME}} {{line.PROD_SPEC}}  <view class="ts">x{{line.PROD_COUNT}}</view></view>
+    </view>
+  </view>
+</view>
+<view bind:tap="escForm" class="bottom-bg {{formShow}}" style="height: {{ height }}rpx"></view>
+<view class="bottom-set {{formShow}}">
+  <view class="title">发表评价</view>
+  <view class="t-t">评分</view>
+  <view class="ypf">
+    <view class="tit">药品评价</view>
+    <view class="ylk">
+      <image class="" src="../../../../static/images/xing.png" wx:for="{{ykpj.re}}" wx:for-index="i" data-index="{{i}}" bind:tap="OrderP" >
+      </image>
+    </view>
+    <view class="ac">
+      <image class="" src="../../../../static/images/xing-ac.png" wx:for="{{ykpj.ac}}" wx:for-index="i" data-index="{{i}}" bind:tap="OrderP" >
+      </image>
+    </view>
+  </view>
+  <view class="ypf">
+    <view class="tit">服务评价</view>
+    <view class="ylk">
+      <image class="" src="../../../../static/images/xing.png" wx:for="{{fwpj.re}}" wx:for-index="i" data-index="{{i}}" bind:tap="FwP" >
+      </image>
+    </view>
+    <view class="ac">
+      <image class="" src="../../../../static/images/xing-ac.png" wx:for="{{fwpj.ac}}" wx:for-index="i" data-index="{{i}}" bind:tap="FwP" >
+      </image>
+    </view>
+  </view>
+  <view class="pj-bottom">
+    <view class="tt-tt">药品满足您的期待吗？请说说看吧</view>
+    <textarea class="linetxt" bindinput="bzInput">
+    </textarea>
+    <view class="btn esc" bind:tap="escForm">取消</view>
+    <view class="btn sub" bind:tap="submitForm">提交</view>
+  </view>
+</view>

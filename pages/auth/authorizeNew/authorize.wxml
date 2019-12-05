@@ -1,0 +1,45 @@
+<view class="p-k" hidden="{{ pageShow }}">
+<!-- <view class="a" style="display:{{check}}">
+   <image class="logo" src="../../../static/images/login-logo.png" lazy-load="false">
+    </image>
+    <view class="txt"><icon type="warn" size="16"/> 仅限部分个人用户申请，提供附近门店查询、我要找药申请、在线咨询等服务。</view>
+   <view class="check" bindtap="check">我要登录</view>
+</view> -->
+
+  <view class="con">
+    <image class="logo" src="../../../static/images/de.png" lazy-load="false">
+    </image>
+    <!-- 仅限部分个人用户申请，提供附近门店查询、我要找药申请、在线咨询等服务。 -->
+    <view class="txt">仅限个人用户申请，主要提供以下服务:</view>
+    <view class="speak">
+       <view><icon type="warn" size="18" color="#0B9472"/> 门店查询</view><view><icon type="warn" size="18" color="#0B9472"/> 找药申请</view><view><icon type="warn" size="18"color="#0B9472" /> 在线咨询</view>
+    </view>
+    <view class="speak">
+       <view><icon type="warn" size="18" color="#0B9472"/> 积分商城</view><view><icon type="warn" size="18" color="#0B9472"/> 意见反馈</view><view><icon type="warn" size="18" color="#0B9472"/> 健康服务</view>
+    </view>
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">我要登录</button> -->
+    <view class="btns">
+    <navigator hover-class="none" target='miniProgram' open-type="exit">
+		  <button style="background:#ccc;color:black;">拒绝登录</button>
+    </navigator>  
+    
+		<button bind:tap="showAlert" wx:if="{{!checked}}">我要登录</button>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:else>我要登录</button>
+    </view>
+
+      <view class="agreement">
+    <radio checked="{{checked}}" bindtap="agreementBtn" class="radio"/><span bindtap="agreementContent">阅读并同意以下协议<text>《服务协议》</text></span>
+    </view>
+
+  </view>
+</view>
+<!-- <view class="alert" style="display: {{alert}};">
+	<view class="bg" bind:tap="exitAlert"></view>
+	<view class="con">
+		<view class="title">是否同意授权您的微信信息？</view>
+		<view class="set-k">
+			<view class="bb exit" bind:tap="exitAlert">拒绝</view>
+			<button class="bb wxs" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+		</view>
+	</view>
+</view> -->

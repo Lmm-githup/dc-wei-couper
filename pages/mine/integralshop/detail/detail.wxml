@@ -1,0 +1,28 @@
+<view class="banner">
+  <swiper indicator-dots="{{true}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="title">
+  <view class="t-d">
+    <view class="t">我的冰箱贴</view>
+    <view class="b">规格：2个</view>
+  </view>
+  <view class="el">已兑换156份</view>
+</view>
+<view class="fg"></view>
+<view class="el-tip">
+  <view class="tt">注意事项</view>
+  <view class="el-txt">1.兑换此券即可0元购买此商品</view>
+  <view class="el-txt">2.兑换此券即可0元购买此商品</view>
+  <view class="el-txt">3.兑换此券即可0元购买此商品</view>
+  <view class="el-txt">4.兑换此券即可0元购买此商品</view>
+  <view class="el-txt">5.兑换此券即可0元购买此商品</view>
+  <view class="el-txt">6.兑换此券即可0元购买此商品</view>
+</view>
+<view class="zw"></view>
+<view class="btn" bind:tap="foForm">99积分兑换</view>

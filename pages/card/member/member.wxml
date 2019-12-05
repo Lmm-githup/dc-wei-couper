@@ -1,0 +1,21 @@
+<view class="tips" wx:if="{{list.length==0}}">暂无家庭成员</view>
+<view class="con">
+  <view class="list" style="display:none">
+    <image class="" src="{{self.headimgurl}}"></image>
+    <view class="con-txt">
+      <view class="na">本人</view>
+      <view class="des">{{self.name}}</view>
+    </view>
+    <!-- <view class="set" bind:tap="goInfo"></view> -->
+  </view>
+  <view class="list" wx:for="{{list}}" data-id='{{item.CARD_ID}}' >
+    <view data-ischange="{{item.ischange}}" class='list-fc' data-mid="{{item.MEM_ID}}" data-fid="{{item.FAMILY_ID}}" bind:tap="goInfo"></view>
+    <image class="" src="../../../static/images/header-zsdg.png"></image>
+    <view class="con-txt">
+      <view class="na">{{item.NAME}}</view>
+      <view class="des">与主卡人关系：{{item.SHIP}}</view>
+    </view>
+    <view wx:if="{{item.isshow}}" class="set"></view>
+  </view>
+</view>
+<!-- <view class="addfamily" bind:tap="goInfo">添加成员</view> -->

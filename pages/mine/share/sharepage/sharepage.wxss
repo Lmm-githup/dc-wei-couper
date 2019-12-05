@@ -1,0 +1,151 @@
+page{
+  height: 100%;
+}
+.coupon{
+  width: 461rpx;
+  height: 123rpx;
+  margin: 27rpx auto 56rpx auto;
+  background: url(https://app.fjxzj.com/weimob/coupon-bg.png) no-repeat;
+  display: flex;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.coupon .num{
+  width: 168rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  text-align: center;
+}
+.coupon .num span{
+  font-size: 48rpx;
+}
+.coupon .txt{
+  width: 287rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  padding-left: 30rpx;
+  padding-right: 16rpx;
+  box-sizing: border-box
+}
+.coupon .txt.small{
+  font-size: 20rpx;
+  padding-left: 20rpx;
+}
+.paper-bg .coupon-con{
+  width: 612rpx;
+  height: 320rpx;
+  border-radius: 8rpx;
+  background-color: rgba(255, 255, 255, .8);
+  margin: 67rpx auto 53rpx auto;
+  padding-top: 52rpx;
+  box-sizing: border-box;
+}
+.paper-bg .coupon-con .coupon{
+  margin-top: 0;
+  margin-bottom: 26rpx;
+}
+.paper-bg .coupon-con .text{
+  text-align: center;
+  font-size: 26rpx;
+  color: #ff6f28;
+  line-height: 45rpx;
+}
+.btn{
+  width: 500rpx;
+  height: 64rpx;
+  text-align: center;
+  line-height: 64rpx;
+  color: #ffffff;
+  margin: 74rpx auto 97rpx auto;
+  background-color: #32429a;
+  border-radius: 32rpx;
+  font-size: 30rpx;
+}
+.paper-bg{
+  width: 100%;
+  height: 100%;
+  background: url(https://app.fjxzj.com/weimob/bgs.png) no-repeat;
+  background-size: cover;
+  /* padding-top: 38rpx; */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.paper-bg .coupon-con.goelse{
+  height: auto;
+}
+.paper-bg .coupon-con.goelse .text{
+  font-size: 32rpx;
+  color: #ff6f28;
+  margin-bottom: 67rpx;
+}
+input{
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 24rpx;
+  color: #a0a0a0;
+}
+.goelse .input-list{
+  width: 450rpx;
+  height: 60rpx;
+  margin: 0 auto 40rpx auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a0a0a0;
+  position: relative;
+}
+.goelse .input-list .code{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #d81e06;
+  right: 0;
+  top: 50%;
+  margin-top: -15rpx;
+  position: absolute;
+}
+.goelse .input-list .code.noclick{
+  pointer-events: none;
+}
+.goelse .ts{
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goelse .ts radio{
+  width: 22rpx;
+  height: 22rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+  width: 22rpx;
+  height: 22rpx;
+  font-size: 0;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+  font-size:18rpx;
+}
+.goelse .ts .label{
+  font-size: 20rpx;
+  color: #000000;
+  margin-left: 10rpx;
+}
+.goelse .ts .label .span{
+  color: #d81e06;
+  display: inline;
+}
+.paper-bg .coupon-con.goelse{
+  width: 630rpx;
+  padding-bottom: 60rpx;
+}
+.new-coupon{
+  width: 460rpx;
+  height: 123rpx;
+  display: block;
+  margin: auto;
+  margin-bottom: 56rpx;
+}

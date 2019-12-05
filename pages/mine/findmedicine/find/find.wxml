@@ -1,0 +1,42 @@
+<view class="no-m" hidden="{{noHideen}}">
+  <view class="search" hidden="{{true}}">
+    <view class="ink">
+      <input type="text" placeholder="请输入药品名称" placeholder-style="color: #868686" />
+      <view class="ic"></view>
+    </view>
+    <view class="sys">
+      <view class="icon"></view>
+      <view class="tx">扫一扫</view>
+    </view>
+  </view>
+  <view class="icon"></view>
+  <view class="tex">暂时没有此产品</view>
+  <view class="btn" bind:tap="goForm">找药申请</view>
+</view>
+<view class="m" hidden="{{!noHideen}}">
+  <!-- <view class="head">
+    您可以拨打
+    <view class="s" data-phone="{{kfphone}}" bind:tap="goPhone">{{kfphone}}</view>
+    直接进行药品信息沟通
+  </view> -->
+  <!-- <view class="tag-k">
+    <view class="k">
+      <view class="tag" wx:for="{{logList}}">{{item.keyword}}</view>
+    </view>
+  </view> -->
+  <view class="list" wx:for="{{mList}}">
+    <view class="top" data-id="{{item.PROD_ID}}" bind:tap="goDetail">
+      <image class="s" src="{{item.thumb}}"></image>
+      <view class="txt">
+        <view class="title">{{item.PROD_NAME}}</view>
+        <view class="desc">{{item.PROD_BRAND}}</view>
+      </view>
+      <view class="num" wx:if="{{item.stock>0}}">库存：{{item.stock}}</view>
+    </view>
+    <view class="bottom">
+      <view class="tn tn1" bind:tap="goYszx">药师咨询</view>
+      <view class="tn tn2" data-id="{{item.PROD_NUM}}" bind:tap="goStores">有货门店</view>
+      <view class="tn tn3" data-id="{{item.PROD_ID}}" bind:tap="goDetail">查看说明</view>
+    </view>
+  </view>
+</view>

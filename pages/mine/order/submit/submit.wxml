@@ -1,0 +1,5 @@
+<view class="k">
+  <image class="" src="../../../../static/images/success.png"></image>
+  <view class="tip">感谢您的评价</view>
+  <view class="btn" bind:tap="goHome">回到首页</view>
+</view>

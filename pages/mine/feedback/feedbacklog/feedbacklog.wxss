@@ -1,0 +1,91 @@
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140rpx;
+  border-top: 1rpx solid #e2e2e2;
+  border-bottom: 1rpx solid #e2e2e2;
+  background-color: white;
+}
+.list .txt{
+  margin-left: 38rpx;
+}
+.list .txt .title{
+  font-size: 28rpx;
+  color: #404040;
+  margin-bottom: 6rpx;
+}
+.list .txt .desc{
+  font-size: 24rpx;
+  color: #757575;
+}
+.list .type{
+  width: 110rpx;
+  height: 40rpx;
+  border: 1px solid #999999;
+  border-radius: 20rpx;
+  background-color: #ebebeb;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #272727;
+  margin-right: 37rpx;
+}
+.list .type.yes{
+  border-color: #f49716;
+  color: #f49716;
+  background-color: white;
+}
+/* 新反馈列表带回复内容的 */
+page{
+  background-color: #f2f2f2;
+}
+.top-margin{
+  height: 17rpx;
+}
+.new-li{
+  margin-bottom: 17rpx;
+  background-color: #fff;
+  padding: 26rpx;
+}
+.new-li .title{
+  margin-bottom: 26rpx;
+  font-size: 26rpx;
+  color: #404040;
+}
+.new-li .title .span{
+  display: inline;
+  font-size: 28rpx;
+  color: #333333;
+}
+.new-li .date{
+  font-size: 22rpx;
+  color: #868686;
+}
+.new-li .type-k{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.new-li .type-k .des{
+  font-size: 26rpx;
+  color: #333333;
+}
+.new-li .type-k .status{
+  height: 40rpx;
+  padding: 0 23rpx;
+  border: 1px solid #7a7a7a;
+  color: #676767;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  line-height: 42rpx;
+}
+.new-li .type-k .status.yes{
+  color: #f49716;
+  border-color: #f49716;
+}
+.new-li .hv-k{
+  margin-top: 18rpx;
+  padding-top: 26rpx;
+  border-top: 1px solid #c7c7c7;
+}

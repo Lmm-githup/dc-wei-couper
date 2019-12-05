@@ -1,0 +1,142 @@
+page{
+  height: 100%;
+}
+.coupon{
+  width: 461rpx;
+  height: 123rpx;
+  margin: 27rpx auto 56rpx auto;
+  background: url(https://app.fjxzj.com/weimob/coupon-bg.png) no-repeat;
+  display: flex;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.coupon .num{
+  width: 168rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  text-align: center;
+}
+.coupon .num span{
+  font-size: 48rpx;
+}
+.coupon .txt{
+  width: 287rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  padding-left: 30rpx;
+  padding-right: 16rpx;
+  box-sizing: border-box
+}
+.coupon .txt.small{
+  font-size: 20rpx;
+  padding-left: 20rpx;
+}
+.btn{
+  width: 500rpx;
+  height: 64rpx;
+  text-align: center;
+  line-height: 64rpx;
+  color: #ffffff;
+  margin: 74rpx auto 97rpx auto;
+  background-color: #3399FF;
+  border-radius: 32rpx;
+  font-size: 30rpx;
+}
+.paper-bg{
+  width: 100%;
+  height: 100%;
+  background: url(https://app.fjxzj.com/weimob/bgs.png) no-repeat;
+  background-size: cover;
+  padding-top: 38rpx;
+  box-sizing: border-box;
+}
+.paper-bg .header{
+  display: flex;
+  align-items: center;
+  margin: 0 54rpx;
+}
+.paper-bg .header image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  object-fit: cover;
+  margin-right: 16rpx;
+}
+.paper-bg .header .txt{
+  font-size: 39rpx;
+  color: #333333;
+}
+.paper-bg .header .txt .name{
+  margin-bottom: 17rpx;
+  line-height: 1;
+}
+.paper-bg .header .txt .desc{
+  color: #fd9c19;
+  font-size: 35rpx;
+  line-height: 1;
+}
+.paper-bg .coupon-con{
+  width: 612rpx;
+  height: 320rpx;
+  border-radius: 8rpx;
+  background-color: rgba(255, 255, 255, .8);
+  margin: 67rpx auto 53rpx auto;
+  padding-top: 52rpx;
+  box-sizing: border-box;
+}
+.paper-bg .coupon-con .coupon{
+  margin-top: 0;
+  margin-bottom: 26rpx;
+}
+.paper-bg .coupon-con .text{
+  text-align: center;
+  font-size: 26rpx;
+  color: #ff6f28;
+  line-height: 45rpx;
+}
+.paper-bg .qrcode{
+  width: 332rpx;
+  height: 337rpx;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  padding-top: 23rpx;
+  box-sizing: border-box;
+  margin: auto auto 66rpx auto;
+}
+.paper-bg .qrcode image{
+  width: 260rpx;
+  height: 260rpx;
+  margin: 0 auto 13rpx auto;
+  display: block;
+}
+.paper-bg .qrcode .txt{
+  text-align: center;
+  font-size: 23rpx;
+  color: #868686;
+}
+.paper-bg .coupon-con.goelse{
+  height: auto;
+}
+.paper-bg .coupon-con.goelse .text{
+  font-size: 32rpx;
+  color: #ff6f28;
+  margin-bottom: 67rpx;
+}
+.span{
+  display: inline;
+}
+.new-coupon{
+  display: block;
+  width: 460rpx;
+  height: 123rpx;
+  margin: auto;
+}
+.new-bot{
+  text-align: center;
+  font-size: 26rpx;
+  color: #ff6f28;
+  line-height: 45rpx;
+  padding: 0 36rpx;
+  margin-top: 26rpx;
+}

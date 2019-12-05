@@ -1,0 +1,15 @@
+<view class="top">
+  <view class="search-k">
+    <input type="text" placeholder-style="font-size:24rpx" placeholder="请输入药品名称搜索" />
+  </view>
+  <view class="sys">
+    <view class="er"></view>
+    <view class="sc">扫一扫</view>
+  </view>
+</view>
+<view class="m-list" bind:tap="qrMedicine">
+  <image class="aimg" mode="aspectFit" src="../../../../static/images/yjfk.png"></image>
+  <view class="ri">
+    <view class="ti">氨加黄敏胶囊</view>
+  </view>
+</view>

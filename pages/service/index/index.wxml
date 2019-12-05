@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="k">
+  <scroll-view class="con" scroll-y>
+    <view class="top">
+      <view class="card">
+        <view class="c-top">
+          <view class="ico">
+            <image class="" src="{{userInfo.headimgurl}}">
+            </image>
+            <view class="na">
+              <view class="name">
+                <view class="txts">您好！{{userInfo.name}}</view>
+                <image wx:if="{{userInfo.is_plus!=0}}" class="cs" src="../../../static/images/vplus.png"></image>
+                <view class="ynk">{{userInfo.tier}}</view>
+              </view>
+              <view class="desc" wx:if="{{userInfo.SAVE_AMOUNT==''}}">今年已累计为您节省0元</view>
+              <view class="desc" wx:else>今年已累计为您节省{{userInfo.SAVE_AMOUNT}}元</view>
+            </view>
+          </view>
+          <view class="djs" style="display:none">
+            <view class="jdt-k {{lv}}">
+              <view class="jd-bg"></view>
+              <view class="jd-ac"></view>
+              <view class="di d1"></view>
+              <view class="di d2"></view>
+              <view class="di d3"></view>
+              <view class="di d4"></view>
+              <view class="di d5"></view>
+            </view>
+            <view class="co-k">
+              <view class="djs-co">普卡</view>
+              <view class="djs-co">银卡</view>
+              <view class="djs-co">金卡</view>
+              <view class="djs-co">铂金</view>
+              <view class="djs-co">钻石</view>
+            </view>
+          </view>
+        </view>
+        <view class="c-b" style="display:none">
+          <image class="c" src="../../../static/images/bigv.png"></image>
+          <view class="tb">PLUS会员</view>
+          <view class="tm">开通即享7大特权</view>
+          <view class="kt">敬请期待</view>
+        </view>
+        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+      </view>
+    </view>
+    <view class="nav-k">
+      <view class="nav one" bind:tap="goYszx">
+        <view class="txt">
+          <view class="t">药师咨询</view>
+          <view class="d">描述症状快速解答</view>
+        </view>
+        <image class="icon" src="../../../static/images/yszx.png"></image>
+      </view>
+      <view class="nav two" bind:tap="goCheck">
+        <view class="txt">
+          <view class="t">健康检测</view>
+          <view class="d">身边健康管理专家</view>
+        </view>
+        <image class="icon" src="../../../static/images/jkjc.png"></image>
+      </view>
+    </view>
+    <view class="block" hidden="{{remindHidden}}">
+      <view class="title">
+        今日服药
+        <!-- <view class="addm" bind:tap="showAlert">新增药品</view> -->
+      </view>
+      <view class="m-list">
+        <image class="aimg" mode="aspectFit" src="{{remind.thumb}}"></image>
+        <view class="ri">
+          <view class="ti">{{remind.pro_name}}</view>
+          <!-- <view class="pe">{{remind.remind_frequency}}</view> -->
+          <!-- <view class="ts">提醒时间</view> -->
+          <view class="time">{{remind.remind_time}}</view>
+        </view>
+        <!-- <view class="btn">删除</view> -->
+      </view>
+    </view>
+    <view class="block s">
+      <view class="title">关注标签</view>
+      <view class="bc-k">
+        <view wx:for="{{tagList}}" class="bc {{item.classN}}" data-id="{{ item.id }}" bind:tap="trueTag">{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="al-bg {{showalert}}" bind:tap="escAlert"></view>
+  <view class="addmi {{showalert}}">
+    <view class="title">新增药品</view>
+    <view class="list">
+      <view class="des">药品名称</view>
+      <view class="cz" bind:tap="chooseMedicine">{{medicine.name}}</view>
+    </view>
+    <view class="list">
+      <view class="des">提醒方式</view>
+      <view class="cz" bind:tap="chooseType">{{medicine.type}}</view>
+    </view>
+    <view class="list">
+      <view class="des">服药频率</view>
+      <view class="cz" bind:tap="choosePer">{{medicine.per}}</view>
+    </view>
+    <view class="btn-k">
+      <view class="btn esc" bind:tap="escAlert">取消</view>
+      <view class="btn sub">确认</view>
+    </view>
+  </view>
+</view>

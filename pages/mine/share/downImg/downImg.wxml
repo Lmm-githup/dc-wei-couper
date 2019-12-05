@@ -1,0 +1,33 @@
+<view class="paper-bg" style="display:none">
+  <view class="header">
+    <image src="{{headimg}}" ></image>
+    <view class="txt">
+      <view class="name">{{nickname}}</view>
+      <view class="desc">{{toptxt}}</view>
+    </view>
+  </view>
+  <view class="coupon-con">
+    <!--
+    <view class="coupon">
+      <view class="num">
+        <view class="span">35</view>元套券
+      </view>
+      <view class="txt small">全场通用 5元现金券、10元代金券、20元代金券</view>
+    </view>
+    <view class="text">//每邀请一位好友注册成功</view>
+    <view class="text">您可获得20积分，好友可获得35元全场通用券</view>
+    -->
+    <image class="new-coupon" src="{{couponImg}}"></image>
+    <view class="new-bot">{{bottom}}</view>
+  </view>
+  <view class="qrcode">
+    <image src="{{ercode}}" ></image>
+    <view class="txt">打开微信扫一扫</view>
+  </view>
+  <button class="btn down" open-type="share">下载海报</button>
+</view>
+<web-view src="{{src}}" bindmessage="">
+  <cover-view class="" scroll-top="0">
+    <button class="btn down">下载海报</button>
+  </cover-view>
+</web-view>

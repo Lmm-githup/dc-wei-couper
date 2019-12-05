@@ -1,0 +1,33 @@
+<view class="paper-bg">
+  <form bindsubmit="subForm" class="coupon-con goelse" hidden="{{ hidden }}">
+    <input type="text" name="name" value="{{userInfo.nickName}}" style="display:none" />
+    <input type="text" name="openid" value="{{openid}}" style="display:none" />
+    <input type="text" name="nickname" value="{{userInfo.nickName}}" style="display:none" />
+    <input type="text" name="headimgurl" value="{{userInfo.avatarUrl}}" style="display:none" />
+    <input type="text" name="sex" wx:if="{{userInfo.gender ==1 }}" value="男" style="display:none" />
+    <input type="text" name="sex" wx:if="{{userInfo.gender ==2 }}" value="女" style="display:none" />
+    <input type="text" name="sex" wx:if="{{userInfo.gender ==3 }}" value="" style="display:none" />
+    <input type="text" name="unionid" value="{{unionid}}" style="display:none" />
+
+    <!-- <view class="coupon">
+      <view class="num">
+        <view class="span">35</view>元套券
+      </view>
+      <view class="txt small">全场通用 5元现金券、10元代金券、20元代金券</view>
+    </view> -->
+    <image class="new-coupon" src="{{pageUI.coupon}}"></image>
+    <view class="text">{{pageUI.coutxt}}</view>
+    <view class="input-list">
+      <input type="number" name="phone" bindinput="printPhone" placeholder="请输入手机号" />
+    </view>
+    <view class="input-list">
+      <input type="number" name="code" placeholder="请输入验证码" />
+      <view class="code {{noclick}}" bind:tap="getPhoneCode">{{codetxt}}</view>
+    </view>
+    <view class="ts">
+      <radio checked />
+      <view class="label">我已认真阅读，理解并同意<view class="span" bind:tap="goUrl" data-url="{{pageUI.href}}">《康佰家大药房用户协议》</view></view>
+    </view>
+    <button class="btn" form-type="submit">立即登录/注册</button>
+  </form>
+</view>

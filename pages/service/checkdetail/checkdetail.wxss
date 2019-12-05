@@ -1,0 +1,142 @@
+page{
+  background-color: #eef0f3;
+}
+.header{
+  height: 140rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13rpx;
+  background-color: #fff;
+}
+.header image{
+  width: 70rpx;
+  height: 70rpx;
+  background-color: aqua;
+  margin-right: 29rpx;
+  margin-left: 40rpx;
+}
+.header view{
+  font-size: 30rpx;
+  color: #333333;
+}
+.form-con{
+  background-color: #fff;
+  margin-bottom: 13rpx;
+}
+.list1{
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+}
+.list1 .li{
+  width: 50%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333333;
+}
+.list1 .li .s,
+.list1 .li input{
+  display: inline-block;
+}
+.list1 .li input{
+  border-bottom: 1px solid #cfcfcf;
+  width: 116rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.radio-group{
+  padding-top: 36rpx;
+  padding-bottom: 36rpx;
+}
+.radio{
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.radio view{
+  display: inline-block;
+  margin-left: 30rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;
+  width: 16rpx; 
+  height: 16rpx; 
+  text-align: center;
+  font-size:0rpx; /* 对勾大小 去掉 */
+  background-color: #0045a2; 
+}
+radio{
+  border-radius: 50%;
+  width: 24rpx;/* 最好是4的倍数，不然会不在中间 */
+  height: 24rpx;
+  border: 2rpx solid #0045a2;/* 设置边框（外圆） */
+  font-size: 0;/* 让边框重合 */
+}
+radio .wx-radio-input{
+   border-radius: 50%;
+   width: 24rpx;
+   height: 24rpx; 
+   border: none;/* 替换边框（隐藏原有边框） */
+}
+.list2 .radio{
+  margin-left: 62rpx;
+}
+.radio .sst,
+.radio .num{
+  display: inline-block;
+}
+.radio .num{
+  width: 126rpx;
+  border-bottom: 1px solid #cfcfcf;
+  text-align: center;
+}
+
+.tip-k{
+  background-color: #fff;
+  padding: 30rpx 40rpx 50rpx 47rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.tip-k .title{
+  margin-bottom: 27rpx;
+}
+.tip-k .con{
+  margin-left: 25rpx;
+  text-align: justify;
+  font-size: 26rpx;
+  color: #505050;
+}
+.tip-k .con.cons{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choosetime{
+  margin-top: 56rpx;
+}
+.tip-k .con.cons .choosetimes{
+  width: 130rpx;
+  height: 42rpx;
+  text-align: center;
+  line-height: 42rpx;
+  background-color: #f49716;
+  font-size: 22rpx;
+  color: #ffffff;
+  border-radius: 21rpx;
+}
+
+.btn{
+  width: 680rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin: 89rpx auto 50rpx auto;
+  color: #ffffff;
+  font-size: 24rpx;
+  background-color: #0DA982;
+  border-radius: 8rpx;
+}

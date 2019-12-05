@@ -1,0 +1,124 @@
+<!--index.wxml-->
+<view class="k">
+  <view class="con">
+    <view class="top">
+      <view class="card">
+        <view class="c-top">
+          <view class="ico">
+            <image class="" src="{{userInfo.headimgurl}}" bind:tap="goInformation">
+            </image>
+            <view class="na">
+              <view class="name">
+                <view class="txts">您好！{{userInfo.name}}</view>
+                <image wx:if="{{userInfo.is_plus!=0}}" class="cs" mode="scaleToFill" src="../../../static/images/vplus.png"></image>
+                <view class="ynk">{{userInfo.tier}}</view>
+              </view>
+              <view class="desc" wx:if="{{userInfo.SAVE_AMOUNT==''}}">今年已累计为您节省0元</view>
+              <view class="desc" wx:else>今年已累计为您节省{{userInfo.SAVE_AMOUNT}}元</view>
+            </view>
+          </view>
+          <view class="djs">
+            <view class="jdt-k {{lv}}">
+              <view class="jd-bg"></view>
+              <view class="jd-ac"></view>
+             <view wx:for="{{setting.Siebel_memberTier}}" class="di d{{index}}"></view>
+            </view>
+            <view class="co-k">
+              <view class="djs-co" wx:for="{{setting.Siebel_memberTier}}">{{item}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+      </view>
+      <view class="sc">
+        <view class="sc-co" data-type="xf" bind:tap="goIntegral">
+          <view class="num" wx:if="{{userInfo.num_jifen==''}}">0</view>
+          <view class="num" wx:else>{{userInfo.num_jifen}}</view>
+          <view class="tit">消费积分</view>
+        </view>
+        <view class="sc-co" data-type="xw" bind:tap="goIntegral">
+          <view class="num" wx:if="{{userInfo.num_behaiv_jifen==''}}">0</view>
+          <view class="num" wx:else>{{userInfo.num_behaiv_jifen}}</view>
+          <view class="tit">行为积分</view>
+        </view>
+        <view class="sc-co quan" bind:tap="goCoupon">
+          <view class="num" wx:if="{{userInfo.num_voucher ==''}}">0</view>
+          <view class="num" wx:else>{{userInfo.num_voucher}}</view>
+          <view class="tit">优惠券</view>
+          <view class="ts"><view class="span">{{userInfo.num_voucher_soon}}</view>张即将到期</view>
+        </view>
+        <view class="sc-co qdd" bind:tap="goCheckin">
+          <image class="log" src="../../../static/images/index-qd.png"></image>
+          <view class="tit">签到</view>
+          <view class="ts">签到得积分</view>
+        </view>
+      </view>
+      <view class="top-set-k">
+        <view class="ks k1" bind:tap="goPayCode">会员码</view>
+        <view class="ks k2" bind:tap="showScanCode">扫一扫</view>
+      </view>
+      <view wx:if="{{fjObj.num>0}}" class="top-tip t{{fjObj.lv}}">还需{{fjObj.num}}值(约消费{{fjObj.num}}元)可升至{{fjObj.name}}</view>
+    </view>
+    <view class="ylts" bind:tap="goShare">
+      <view class="ani-k">
+        <view class="ani" animation="{{aniTip}}" style="transform:translateX({{tipwidth}}px);">
+          <!-- <view class="tx">邀请有礼：邀请好友立得</view> -->
+          <view class="ts">{{elstips}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="moreset">
+      <view class="title" bind:tap="democlick">功能服务</view>
+      <view class="c">
+        <view class="ssa jkgw" bind:tap="goGuide">
+          <image mode="aspectFit" class="" src="../../../static/images/zhuanshudaogou.png"></image>
+          <view class="txt">健康顾问</view>
+          <view class="icon-n" hidden="{{gwhidden}}"></view>
+          <view catch:tap="goGuideDetail" class="tipps t" hidden="{{guideMes.red_chat == 0}}">{{guideMes.num_chat}}</view>
+        </view>
+        <view class="ssa" bind:tap="goCoupon">
+          <image mode="aspectFit" class="" src="../../../static/images/lqzx.png"></image>
+          <view class="txt">领券中心</view>
+        </view>
+        <view class="ssa" bind:tap="goFind">
+          <image mode="aspectFit" class="" src="../../../static/images/wyzy.png"></image>
+          <view class="txt">我要找药</view>
+          <view catch:tap="goFindMList" class="tipps t" hidden="{{userInfo.red_apply_medicine == 0}}">{{userInfo.num_apply_medicine}}</view>
+        </view>
+        <view class="ssa" bind:tap="goShop">
+          <image mode="aspectFit" class="" src="../../../static/images/jfsc.png"></image>
+          <view class="txt">积分商城</view>
+        </view>
+        <view class="ssa" bind:tap="goShare">
+          <image mode="aspectFit" class="" src="../../../static/images/yqyl.png"></image>
+          <view class="txt">邀请有礼</view>
+          <view class="tipps">有礼</view>
+        </view>
+        <!-- <view class="ssa" bind:tap="goRemind">
+          <image mode="aspectFit" class="" src="../../../static/images/yyts.png"></image>
+          <view class="txt">用药提醒</view>
+        </view> -->
+        <view class="ssa" bind:tap="hvyr">
+          <image mode="aspectFit" class="" src="../../../static/images/hyqy.png"></image>
+          <view class="txt">会员权益</view>
+        </view>
+        <view class="ssa" bind:tap="goCard">
+          <image mode="aspectFit" class="" src="../../../static/images/jtk.png"></image>
+          <view class="txt">家庭卡</view>
+        </view>
+        <view class="ssa" bind:tap="goFeedback">
+          <image mode="aspectFit" class="" src="../../../static/images/yjfk.png"></image>
+          <view class="txt">意见反馈</view>
+          <view class="tipps" hidden="{{userInfo.red_feedback_reply==1}}">有礼</view>
+          <view catch:tap="goFeedbackList" class="tipps t" hidden="{{userInfo.red_feedback_reply==0}}">{{userInfo.num_feedback_reply}}</view>
+        </view>
+        <view class="ssa" bind:tap="goOrder">
+          <image mode="aspectFit" class="" src="../../../static/images/lsdd.png"></image>
+          <view class="txt">历史订单</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="fcs fj"  bind:tap="goStores">附近门店</view>
+  <view class="fcs lx" hidden="{{gzhHidden}}" bind:tap="goWxCode">绑定公众号</view>
+</view>            

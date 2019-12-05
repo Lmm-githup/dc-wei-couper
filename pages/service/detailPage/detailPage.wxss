@@ -1,0 +1,112 @@
+page{
+  background-color: #eef0f3;
+}
+.header{
+  height: 538rpx;
+  background-color: #0DA982;
+  position: relative;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+.header .title{
+  margin: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .title .head-img{
+  display: flex;
+  align-items: center;
+}
+.header .title .head-img image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  margin-right: 20rpx;
+}
+.header .title .head-img .txt{
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.header .title .date{
+  color: #ffffff;
+  font-size: 24rpx;
+}
+.header .chart-k{
+  width: 328rpx;
+  height: 328rpx;
+  border-radius: 328rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -164rpx;
+  margin-left: -164rpx;
+  background-color: #e6e7ec;
+}
+.line-k{
+  height: 400rpx;
+  width: 90%;
+  padding-bottom: 30rpx;
+  margin: auto;
+}
+ec-canvas{
+  width: 100%;
+  height: 100%;
+}
+.tuli{
+  position: absolute;
+  bottom: 28rpx;
+  width: 670rpx;
+  left: 50%;
+  margin-left: -335rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tuli .tu-k{
+  display: flex;
+  align-items: center;
+}
+.tuli .tu-k .tu{
+  width: 32rpx;
+  height: 32rpx;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  border-radius: 3rpx;
+}
+.tuli .tu-k .txt{
+  font-size: 24rpx;
+  color: #ffffff;
+}
+.block{
+  margin-top: 20rpx;
+  background-color: #ffffff;
+}
+.block .title{
+  padding: 30rpx 30rpx 0 30rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.block .list{
+  padding: 30rpx 40rpx;
+  border-bottom: 1px solid #eef0f3;
+}
+.block .list .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #505050;
+  margin-bottom: 0.3rem;
+}
+.block .list .top .ls{
+  color: #ff7600;
+}
+.block .list .bottom{
+  display: flex;
+}
+.block .list .bottom .date{
+  font-size: 22rpx;
+  color: #868686;
+}

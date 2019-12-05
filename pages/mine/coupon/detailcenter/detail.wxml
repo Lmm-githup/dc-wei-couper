@@ -1,0 +1,11 @@
+<view class="kk" hidden="{{!shareHidden}}">
+  <view class="top">
+    <view class="tt">{{detail.centerSubTitle}}</view>
+    <view class="des">{{detail.tip_text}}</view>
+    <view hidden="{{shareHidden}}" wx:if="{{detail.GENERAL_NUM!=''}}" class="des des-el">每位用户只限领取{{detail.GENERAL_NUM}}张</view>
+  </view>
+  <view class="btn" bind:tap="addCoupon" data-num="{{detail.ADDITIONAL_GENERAL_NUM}}" data-id="{{detail.voucherId}}">领取</view>
+  <view class="tip">
+    <view class="p">{{detail.DESCRIPTION}}</view>
+  </view>
+</view>

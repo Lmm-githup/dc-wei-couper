@@ -1,0 +1,35 @@
+page{
+  background-color: #eef0f3;
+  width: 100%;
+  height: 100%;
+}
+.k{
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 120rpx;
+}
+.k image{
+  width: 127rpx;
+  height: 127rpx;
+  display: block;
+  margin: 0 auto 90rpx auto;
+}
+.k .tip{
+  text-align: center;
+  font-size: 36rpx;
+  color: #505050;
+}
+.k .btn{
+  position: absolute;
+  bottom: 62rpx;
+  width: 640rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #0045a2;
+  color: #ffffff;
+  font-size: 30rpx;
+  left: 50%;
+  margin-left: -320rpx;
+}

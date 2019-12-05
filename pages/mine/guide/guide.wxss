@@ -1,0 +1,178 @@
+page{
+  background-color: #ffffff;
+  border-top: 1px solid #eef0f3;
+}
+.list{
+  background-color: white;
+  border-bottom: 1px solid #dcdcdc;
+}
+.list .top{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid #dcdcdc;
+  display: flex;
+  align-items: flex-start;
+}
+.list .top image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 90rpx;
+  margin: 0 30rpx auto 39rpx;
+  background-color: azure;
+}
+.list .top .txt{
+  font-size: 26rpx;
+  color: #404040;
+  line-height: 40rpx;
+}
+.list .bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 78rpx;
+  font-size: 26rpx;
+  color: #404040;
+  position: relative;
+}
+.list .bottom::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #dcdcdc;
+  top: 0;
+  left: 50%;
+}
+.tips{
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: #505050;
+  padding: 0 37rpx;
+  text-align: justify;
+  line-height: 37rpx;
+}
+.num{
+  padding-right:39rpx;
+  text-align: justify;
+}
+/* 新UI */
+.top-tip{
+  width: 690rpx;
+  height: 230rpx;
+  margin: 40rpx auto 32rpx auto;
+  background-color: #ebf1ff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+}
+.top-tip .ti{
+  font-size: 28rpx;
+  color: #f03838;
+  padding: 27rpx 27rpx 10rpx 27rpx;
+}
+.top-tip .ts{
+  font-size: 26rpx;
+  color: #3a3a3a;
+  line-height: 50rpx;
+  padding: 0 37rpx 27rpx 37rpx;
+  text-align: justify;
+}
+.desc{
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  height: 630rpx;
+  position: relative;
+  margin: auto;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 8rpx;
+}
+.desc .left{
+  width: 276rpx;
+  height: 567rpx;
+  position: absolute;
+  bottom: 0;
+  left: 16rpx;
+	background: url(https://app.fjxzj.com/weimob/dg-icon.png) no-repeat;
+	background-size: cover;
+}
+.desc .con-r{
+  margin-left: 306rpx;
+  font-size: 28rpx;
+  color: #404040;
+  padding-right: 16rpx;
+}
+.desc .con-r .li{
+  margin-bottom: 40rpx;
+}
+.bottom-elee{
+  position: fixed;
+  bottom: 20rpx;
+  width: 100%;
+  left: 0;
+}
+.bottom{
+  width: 690rpx;
+  height: 80rpx;
+  display: flex;
+  margin: auto;
+}
+.bottom .btn{
+  height: 100%;
+  width: 50%;
+  color: #ffffff;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bottom .btn.l1{
+  background-color: #0DA982;
+}
+.bottom .btn.l1 .icon{
+  width: 29rpx;
+  height: 29rpx;
+  margin-right: 10rpx;
+}
+.bottom .btn.l2{
+  background-color: #e88d0e;
+}
+.bottom .btn.l2 .icon{
+  width: 29rpx;
+  height: 29rpx;
+  margin-right: 12rpx;
+}
+.tips-el{
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  width: 690rpx;
+  margin: 30rpx auto;
+}
+/* 小红点 */
+.tipps{
+  position: absolute;
+  width: 42rpx;
+  height: 24rpx;
+  text-align: center;
+  line-height: 24rpx;
+  color: #ffffff;
+  font-size: 16rpx;
+  border-top-right-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
+  top: -10rpx;
+  right: 60rpx;
+  background-color: rgb(216,30,6);
+}
+.tipps.t{
+  width: auto;
+  height: 30rpx;
+  min-width: 30rpx;
+  line-height: 30rpx;
+  padding: 0 10rpx;
+  border-radius: 24rpx;
+  top: -6rpx;
+  box-sizing: border-box;
+}

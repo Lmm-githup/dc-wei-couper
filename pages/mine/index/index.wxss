@@ -1,0 +1,524 @@
+page{
+  height: 100%;
+}
+.k{
+  height: 100%;
+  background-color: #eef0f3;
+  overflow: hidden;
+  overflow: auto;
+}
+.txts,.desc{color: #DBC55B;font-weight: bold}
+.k .con{
+  height: 100%;
+}
+.top{
+  position: relative;
+}
+.top .sc{
+  width: 100%;
+  height: 160rpx;
+  background-color: #ffffff;
+}
+.top .sc .sc-co{
+  float: left;
+  width: 25%;
+  margin-top: 37rpx;
+  text-align: center;
+}
+.top .sc .sc-co .num{
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+.top .sc .sc-co .tit{
+  font-size: 24rpx;
+  color: #333333;
+}
+.top .sc .sc-co.quan .num{
+  margin-bottom: 5rpx;
+}
+.top .sc .sc-co.quan .ts,
+.top .sc .sc-co.qdd .ts{
+  margin-top: 5rpx;
+  font-size: 20rpx;
+  color: #333333;
+}
+.top .sc .sc-co.quan .ts .span{
+  display: inline;
+  color: #e25644;
+}
+.top .sc .sc-co .log{
+  width: 32rpx;
+  height: 35rpx;
+  margin: 0 auto 6rpx auto;
+  display: block;
+}
+.top .card{
+  height: 385rpx;
+  overflow: hidden;
+  box-shadow: 0 0 2rpx 2rpx rgba(84, 84, 84, 0.1);
+  background-color: #0DA982;
+  position: relative;
+}
+.top-set-k{
+  position: absolute;
+  height: 132rpx;
+  bottom: 140rpx;
+  width: 690rpx;
+  left: 50%;
+  margin-left: -345rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 60rpx rgba(0, 0, 0, .2);
+  border-radius: 18rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.top-set-k::after{
+  content: '';
+  width: 1px;
+  height: 50rpx;
+  left: 50%;
+  top: 50%;
+  margin-top: -25rpx;
+  background-color: #c9c9c9;
+  position: absolute;
+}
+.top-set-k .ks{
+  height: 87rpx;
+  line-height: 87rpx;
+  padding-left: 110rpx;
+  background: url(https://app.fjxzj.com/weimob/header-ewm.png) no-repeat left center;
+  background-size: auto 100%;
+  color: #333333;
+  font-size: 33rpx;
+}
+.top-set-k .ks.k2{
+  background-image: url(https://app.fjxzj.com/weimob/header-sys.png)
+}
+.top .card .c-top{
+  height: 256rpx;
+}
+.top .card .c-b{
+  height: 77rpx;
+  width: 680rpx;
+  text-shadow: 0 0 2px 4px rgba(106, 106, 106, 0.2);
+  font-size: 36rpx;
+  background: linear-gradient(left,#777373,#383331);
+  background: -webkit-linear-gradient(left,#777373,#383331);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -340rpx;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+  display: flex;
+  align-items: center;
+}
+.top .card .c-b .c{
+  width: 28rpx;
+  height: 27rpx;
+  margin-left: 24rpx;
+  margin-right: 12rpx;
+}
+.top .card .c-b .tb{
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #f3ca7e;
+}
+.top .card .c-b .tm{
+  font-size: 20rpx;
+  color: #f3ca7e;
+}
+.top .card .c-b .kt{
+  background-color: #efd189;
+  width: 114rpx;
+  height: 38rpx;
+  border-radius: 19rpx;
+  text-align: center;
+  line-height: 38rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -19rpx;
+  font-size: 18rpx;
+  color: #333333;
+}
+.top .card .ico{
+  padding-top: 37rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+}
+.top .card .ico image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  float: left;
+  background-color: #3c4298;
+}
+.top .card .ico .na{
+  float: left;
+  margin-top: 6rpx;
+  margin-left: 16rpx;
+  color: #333333;
+}
+.top .card .ico .na .name{
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.top .card .ico .na .name .cs{
+  width: 60rpx;
+  height: 27rpx;
+  margin: 0 15rpx 0 12rpx;
+}
+.top .card .ico .na .name .ynk{
+  /* width: 70rpx; */
+  height: 28rpx;
+  border-radius: 14rpx;
+  text-align: center;
+  line-height: 28rpx;
+  background-color: #9EDDCD;
+  color: #202020;
+  font-size: 18rpx;
+  padding: 0 10rpx;
+}
+.top .card .ico .na .desc{
+  font-size: 22rpx;
+}
+.top .card .djs{
+  width: 537rpx;
+  margin: 0 auto auto auto;
+  overflow: hidden;
+  position: relative;
+}
+.top .card .djs .jdt-k{
+  width: 510rpx;
+  height: 14rpx;
+  margin: 30rpx auto 20rpx auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.top .card .djs .jdt-k .jd-bg{
+  position: absolute;
+  height: 6rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  margin-top: -3rpx;
+  border-radius: 3rpx;
+  z-index: 1;
+}
+.top .card .djs .jdt-k .jd-ac{
+  position: absolute;
+  height: 6rpx;
+  width: 1rpx;
+  background-color: #424AB5;
+  top: 50%;
+  margin-top: -3rpx;
+  border-radius: 3rpx;
+  z-index: 2;
+}
+.top .card .djs .jdt-k .di{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url(https://app.fjxzj.com/weimob/header-suo.png);
+  background-size: 100% 100%;
+  border-radius: 30rpx;
+  position: relative;
+  top: -6rpx;
+  z-index:3;
+}
+.top .card .djs .jdt-k.lv0 .jd-ac{
+  width: 0;
+}
+.top .card .djs .jdt-k.lv1 .jd-ac{
+  width: 42rpx;
+}
+.top .card .djs .jdt-k.lv2 .jd-ac{
+  width: 176rpx;
+}
+.top .card .djs .jdt-k.lv3 .jd-ac{
+  width: 300rpx;
+}
+.top .card .djs .jdt-k.lv4 .jd-ac{
+  width: 417rpx;
+}
+.top .card .djs .jdt-k.lv5 .jd-ac{
+  width: 100%;
+}
+.top .card .djs .jdt-k.lv1 .di.d1{
+  background-color:#424AB5;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  top: -3rpx;
+  background-image: none;
+}
+.top .card .djs .jdt-k.lv2 .di.d2,
+.top .card .djs .jdt-k.lv2 .di.d1{
+  background-color:#f49716;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  top: -3rpx;
+  background-image: none;
+}
+.top .card .djs .jdt-k.lv3 .di.d3,
+.top .card .djs .jdt-k.lv3 .di.d2,
+.top .card .djs .jdt-k.lv3 .di.d1{
+  background-color:#f49716;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  top: -3rpx;
+  background-image: none;
+}
+.top .card .djs .jdt-k.lv4 .di.d4,
+.top .card .djs .jdt-k.lv4 .di.d3,
+.top .card .djs .jdt-k.lv4 .di.d2,
+.top .card .djs .jdt-k.lv4 .di.d1{
+  background-color:#f49716;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  top: -3rpx;
+  background-image: none;
+}
+.top .card .djs .jdt-k.lv5 .di.d5,
+.top .card .djs .jdt-k.lv5 .di.d4,
+.top .card .djs .jdt-k.lv5 .di.d3,
+.top .card .djs .jdt-k.lv5 .di.d2,
+.top .card .djs .jdt-k.lv5 .di.d1{
+  background-color:#f49716;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  top: -3rpx;
+  background-image: none;
+}
+.top .card .djs .co-k{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #333333;
+}
+.card .logo-tb{
+  position: absolute;
+  /* top: 37rpx; */
+  right: 10rpx;
+  width: 170rpx;
+  height: 45rpx;
+  top:42rpx;
+  /* width: 126rpx;
+  height: 24rpx; */
+  /* background: url(https://app.fjxzj.com/weimob/tx-icon.png) no-repeat; */
+  background-size: 100% 100%;
+}
+.logo-tb image{width: 100%;height: 100%}
+.card-er{
+  position: absolute;
+  right: 0;
+  top: 72rpx;
+  background-color: #fff;
+  width: 130rpx;
+  height: 56rpx;
+  border-top-left-radius: 56rpx;
+  border-bottom-left-radius: 56rpx;
+  display: flex;
+  align-items: center;
+}
+.card-er .icon{
+  width: 34rpx;
+  height: 34rpx;
+  margin: 0 13rpx 0 20rpx;
+  background: url(https://app.fjxzj.com/weimob/ersers.png) no-repeat;
+  background-size: 100% 100%;
+}
+.card-er .t{
+  font-size: 18rpx;
+  color: #333333;
+}
+.ylts{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-left: 85rpx;
+  font-size: 24rpx;
+  color: #505050;
+  background: #fff url(https://app.fjxzj.com/weimob/index-lb.png) no-repeat;
+  background-size: 31rpx 31rpx;
+  background-position: 24rpx center;
+}
+.ylts .ani{
+  display: block;
+  line-height: 88rpx;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ani-k{
+  overflow: hidden;
+  margin-right: 85rpx;
+  display: block!important;
+}
+.ylts view{
+  display: inline;
+}
+.ylts view.tx{
+  color: #333333;
+}
+.ylts view.ts{
+  color: #e90000;
+  font-size: 28rpx;
+}
+.moreset{
+  background-color: #fff;
+  min-height: 430rpx;
+  height: calc(100% - 693rpx);
+  overflow: hidden;
+}
+.moreset .title{
+  padding: 27rpx 0 25rpx 0;
+  border-bottom: 2rpx solid #e3e3e3;
+  line-height: 1;
+  margin: 0 24rpx;
+  font-size: 26rpx;
+  color: #333333;
+}
+.moreset .c{
+  overflow: hidden;
+  padding-top: 30rpx;
+  padding-bottom: 12rpx;
+}
+.moreset .c .ssa{
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.moreset .c .ssa.jkgw .icon-n{
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  top: 20rpx;
+  left: 130rpx;
+  background: url(https://app.fjxzj.com/weimob/header-gw.png) no-repeat;
+  background-size: 100% 100%;
+}
+.top-tip{
+  width: 466rpx;
+  height: 53rpx;
+  background: url(https://app.fjxzj.com/weimob/header-tip1.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 280rpx;
+  left: 80rpx;
+  color: #333333;
+  font-size: 22rpx;
+  text-indent: 12rpx;
+  line-height: 62rpx;
+}
+.top-tip.t3{
+  background-image: url(https://app.fjxzj.com/weimob/header-tip2.png);
+  left: 100rpx;
+}
+.top-tip.t4{
+  background-image: url(https://app.fjxzj.com/weimob/header-tip3.png);
+  left: 106rpx;
+}
+.top-tip.t5{
+  background-image: url(https://app.fjxzj.com/weimob/header-tip4.png);
+  left: 186rpx;
+}
+.moreset .c .ssa .tipps{
+  position: absolute;
+  width: 42rpx;
+  height: 24rpx;
+  text-align: center;
+  line-height: 24rpx;
+  color: #ffffff;
+  font-size: 16rpx;
+  border-top-right-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
+  top: -10rpx;
+  right: 60rpx;
+  background-color: rgb(216,30,6);
+}
+.moreset .c .ssa .tipps.t{
+  right: auto;
+  left: 150rpx;
+  width: auto;
+  height: 30rpx;
+  min-width: 30rpx;
+  line-height: 30rpx;
+  padding: 0 10rpx;
+  border-radius: 24rpx;
+  top: -6rpx;
+  box-sizing: border-box;
+}
+.moreset .c .ssa image{
+  display: block;
+  height: 40rpx;
+  width: 40rpx;
+  margin: auto auto 12rpx auto;
+}
+.moreset .c .ssa .txt{
+  text-align: center;
+  font-size: 23rpx;
+  color: #333333;
+}
+.fcs{
+  position: fixed;
+  top: 660rpx;
+  right: 0;
+  background-color: #0DA982;
+  color: #ffffff;
+  font-size: 22rpx;
+  text-align: center;
+  width: 136rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  border-top-left-radius: 58rpx;
+  border-bottom-left-radius: 58rpx;
+}
+.fcs.lx{
+  top: auto;
+  bottom:20rpx;
+}
+/* 扫一扫 */
+.sys{
+  position: absolute;
+  right: 0;
+  top: 156rpx;
+  font-size: 22rpx;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  width: 130rpx;
+  height: 56rpx;
+  border-top-left-radius: 56rpx;
+  border-bottom-left-radius: 56rpx;
+  display: flex;
+  align-items: center;
+}
+.sys .icon {
+  width: 34rpx;
+  margin: auto;
+  height: 34rpx;
+  background: url(https://app.fjxzj.com/weimob/sys-icon.png) no-repeat;
+  background-size: 100%;
+  margin: 0 13rpx 0 20rpx;
+}
+.sys .txt{
+  font-size: 18rpx;
+  color: #333333;
+}

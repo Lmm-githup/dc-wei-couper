@@ -1,0 +1,18 @@
+<!-- <image class="head" src="{{}}">这是药店图片</image> -->
+<view class="desc">
+  <view class="txt">
+    <view class="title">{{detail.ORG_NAME}}</view>
+    <view class="el ph">电话：{{detail.PHONE}}</view>
+    <view class="el">营业时间：{{detail.working_time}}</view>
+  </view>
+  <view class="call" data-phone="{{detail.PHONE}}" bind:tap="phoneCall">
+    <view class="icon"></view>
+    <view class="x">拨打电话</view>
+  </view>
+</view>
+
+<view class="add">
+  <view class="txt">{{detail.ADDR}}</view>
+  <view class="btn" bind:tap="goThere">去这里</view>
+</view>
+<map style="height:{{mapheihgt}}rpx" name="" markers="{{markers}}" longitude="{{map.longitude}}" latitude="{{map.latitude}}"></map>

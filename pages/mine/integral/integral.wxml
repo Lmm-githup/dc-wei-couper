@@ -1,0 +1,60 @@
+<view class="integral">
+
+<view class="wrap">
+  <view class="top">
+    <view class="con">
+      <view class="txt">
+        <view class="tt">当前积分</view>
+        <view class="bb">{{jifNUM}}</view>
+      </view>
+    </view>
+  </view>
+    <view class="title">
+      <view class="t-txt {{type == 'all'? 'action' : ''}}" data-type="all" bind:tap="tabNav">明细</view>
+      <view class="t-txt {{type == 'add'? 'action' : ''}}" data-type='add' bind:tap="tabNav">收入</view>
+      <view class="t-txt {{type == 'reduce'? 'action' : ''}}" data-type='reduce' bind:tap="tabNav">支出</view>
+    </view>
+</view>
+
+
+  <view class="bottom">
+    <view class="b-con" wx:if="{{type == 'all'}}">
+      <view class="list" wx:for="{{allList}}"> 
+        <view class="txt">
+          <view class="desc">{{item.disname}}</view>
+          <view class="date">{{item.processdate}}</view>
+        </view>
+        <view class="txt">{{item.display_title}}</view>
+        <view class="num" wx:if="{{item.action=='add'}}" >+{{item.accruvalue}}</view>
+        <view class="num" wx:else>-{{item.accruvalue}}</view>
+      </view>
+      <view class="ts">{{all.ts}}</view>
+    </view>
+    
+
+    <view class="b-con" wx:if="{{type == 'add'}}">
+      <view class="list" wx:for="{{addList}}">
+        <view class="txt">
+          <view class="desc">{{item.disname}}</view>
+          <view class="date">{{item.processdate}}</view>
+        </view>
+        <view class="txt">{{item.display_title}}</view>
+        <view class="num">+{{item.accruvalue}}</view>
+      </view>
+      <view class="ts">{{add.ts}}</view>
+    </view>
+
+    <view class="b-con" wx:if="{{type == 'reduce'}}">
+      <view class="list" wx:for="{{reduceList}}">
+        <view class="txt">
+          <view class="desc">{{item.disname}}</view>
+          <view class="date">{{item.processdate}}</view>
+        </view>
+        <view class="txt">{{item.display_title}}</view>
+        <view class="num">-{{item.accruvalue}}</view>
+      </view>
+      <view class="ts">{{reduce.ts}}</view>
+    </view>
+
+  </view>
+</view>

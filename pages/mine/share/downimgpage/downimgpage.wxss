@@ -1,0 +1,10 @@
+page{
+  height: 100%;
+}
+.imgs{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}

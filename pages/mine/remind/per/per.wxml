@@ -1,0 +1,44 @@
+<view class="tip">提醒频率</view>
+<view class="bc bc1">
+  <view class="bctip">提醒频次</view>
+  <view class="li">每</view>
+  <view class="ks">
+    <view class="mi"></view>
+    <view class="day">1</view>
+    <view class="add"></view>
+  </view>
+  <view class="li">天</view>
+</view>
+<view class="bc bc2">
+  <view class="bctip">选择时间</view>
+  <view class="s">{{time}}</view>
+  <picker
+    mode="time" value="{{time}}"
+    bindchange="bindTimeChange"
+  >
+  <view class="time">添加时间</view>
+  </picker>
+</view>
+
+<view class="bc bc2 bc3 one">
+  <view class="bctip">提醒开始日</view>
+  <view class="s">{{start}}</view>
+  <picker
+    mode="date" value="{{start}}"
+    bindchange="startTimeChange"
+  >
+  <view class="time"></view>
+  </picker>
+</view>
+<view class="bc bc2 bc3">
+  <view class="bctip">提醒结束日</view>
+  <view class="s">{{end}}</view>
+  <picker
+    mode="date" value="{{end}}"
+    bindchange="endTimeChange"
+  >
+  <view class="time"></view>
+  </picker>
+</view>
+
+<view class="btn" bind:tap="chooseType">确认</view>

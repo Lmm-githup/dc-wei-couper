@@ -1,0 +1,58 @@
+page{
+  background-color: #eef0f3;
+  height: 100%;
+}
+.desc{
+  width: 668rpx;
+  margin: 0 auto 80rpx auto;
+  padding-top: 46rpx;
+  font-size: 30rpx;
+  color: #505050;
+  line-height: 40rpx;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700rpx;
+  margin: 0 auto 24rpx auto;
+}
+.list input{
+  background-color: #fff;
+  height: 90rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #c2c2c2;
+  border-radius: 8px;
+  font-size: 28rpx;
+  color: #868686;
+  padding-left: 25rpx;
+}
+.list input.phone{
+  width: 480rpx;
+}
+.list .sendcode{
+  background-color: #f49716;
+  border: 1px solid #f49716;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 28rpx;
+  width: 200rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 8px;
+  text-align: center;
+}
+.list .sendcode.noclick{
+  pointer-events: none;
+}
+.sub{
+  width: 700rpx;
+  height: 80rpx;
+  color: #ffffff;
+  background-color: #0DA982;
+  margin-top: 120rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}

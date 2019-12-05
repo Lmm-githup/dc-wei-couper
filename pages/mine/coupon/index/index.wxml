@@ -1,0 +1,18 @@
+<view class="con" hidden="{{hidden}}" style="height:{{scrollHeight}}rpx">
+  <mine ></mine>
+</view>
+<view class="con" hidden="{{!hidden}}" style="height:{{scrollHeight}}rpx">
+  <center></center>
+</view>
+<view class="footer">
+  <view class="mine {{navAC[0]}}" data-index='0' bind:tap="tabNav">
+    <image class="noac" src="../../../../static/images/coupon-1.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-1-ac.png"></image>
+    <view class="txt">我的优惠券</view>
+  </view>
+  <view class="center {{navAC[1]}}" data-index='1' bind:tap="tabNav">
+    <image class="noac" src="../../../../static/images/coupon-2.png"></image>
+    <image class="ac" src="../../../../static/images/coupon-2-ac.png"></image>
+    <view class="txt">领券中心</view>
+  </view>
+</view>

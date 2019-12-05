@@ -1,0 +1,102 @@
+.map map{
+  height: 306rpx;
+  width: 100%;
+}
+page{
+  background-color: #eef0f3;
+}
+.list{
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+  padding-top: 15rpx;
+  position: relative;
+}
+.list .t{
+  padding: 17rpx 18rpx;
+  display: flex;
+  align-items: center;
+}
+.list .t image{
+  background-color: aqua;
+  width: 130rpx;
+  height: 130rpx;
+  margin-right: 20rpx;
+}
+.list .t .title{
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 16rpx;
+  line-height: 1;
+}
+.list .t .el{
+  height: 25rpx;
+  line-height: 25rpx;
+  padding-left: 32rpx;
+  font-size: 22rpx;
+  color: #505050;
+  background: url(https://app.fjxzj.com/weimob/st-time.png) no-repeat left center;
+  background-size: 22rpx 22rpx;
+}
+.list .t .el.yb{
+  /* background-image: url(https://app.fjxzj.com/weimob/st-ad.png); */
+  background-size: 23rpx 19rpx;
+  margin-top: 13rpx;
+  padding-left: 32rpx;
+  background-image: none;
+  height: auto;
+  width: 530rpx;
+}
+.list .b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78rpx;
+  margin: 0 33rpx;
+  border-top: 1px solid #e3e3e3;
+  font-size: 24rpx;
+  color: #505050;
+}
+.list .b .phone{
+  padding-left: 36rpx;
+  background: url(https://app.fjxzj.com/weimob/st-phone.png) no-repeat left center;
+  background-size: 22rpx 22rpx;
+  margin-left: 3rpx;
+}
+.list .b .el{
+  padding-right: 26rpx;
+  background: url(https://app.fjxzj.com/weimob/login_ic_ret.png) no-repeat right center;
+  background-size: 12rpx 22rpx;
+}
+.list .jl{
+  position: absolute;
+  top: 72rpx;
+  right: 30rpx;
+}
+.list .jl .top{
+  text-align: right;
+  font-size: 22rpx;
+  color: #505050;
+  padding-left: 30rpx;
+  background: url(https://app.fjxzj.com/weimob/st-add.png) no-repeat left center;
+  background-size: 20rpx 20rpx;
+  float: right;
+  clear: both;
+}
+.list .jl .btn{
+  width: 120rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  background-color: #0DA982;
+  color: #ffffff;
+  font-size: 22rpx;
+  float: right;
+  margin-top: 6rpx;
+  border-radius: 6rpx;
+  clear: both;
+}
+.loadtip{
+	padding: 20rpx;
+	text-align: center;
+	font-size: 26rpx;
+}

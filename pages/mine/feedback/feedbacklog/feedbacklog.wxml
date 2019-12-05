@@ -1,0 +1,24 @@
+<!-- <view class="list" wx:for="{{list}}" data-id="{{item.SR_ID}}" bind:tap="goDetail">
+  <view class="txt">
+    <view class="title">反馈类型：{{item.SR_SUB_TYPE}}</view>
+    <view class="desc">{{item.SR_CREATE_DATE}}</view>
+  </view>
+  <view wx:if="{{item.SR_STATUS=='已回复'}}" class="type yes">{{item.SR_STATUS}}</view>
+  <view wx:else class="type no">{{item.SR_STATUS}}</view>
+</view> -->
+
+<!-- 新反馈列表带回复内容的 -->
+<view class="top-margin"></view>
+<view class="new-li" wx:for="{{list}}">
+  <view class="title"><view class="span">问题描述：</view>{{item.SR_QUESTION}}</view>
+  <view class="date">{{item.SR_CREATE_DATE}}</view>
+  <view class="type-k">
+    <view class="des">反馈类型：{{item.SR_SUB_TYPE}}</view>
+    <view wx:if="{{item.SR_STATUS=='已回复'}}" class="status yes">{{item.SR_STATUS}}</view>
+  <view wx:else class="status no">{{item.SR_STATUS}}</view>
+  </view>
+  <view class="hv-k" wx:if="{{item.SR_STATUS=='已回复'}}">
+    <view class="title"><view class="span">回复内容：</view>{{item.SR_ANSWER}}</view>
+    <view class="date">{{item.REPLY_DATE}}</view>
+  </view>
+</view>

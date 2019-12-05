@@ -1,0 +1,34 @@
+<view class="kk" hidden="{{!shareHidden}}">
+  <view class="top">
+    <view class="tt">
+      <view class="s">{{detail.VOUCHERNAME}}</view>
+      <view class="s1">{{detail.centerSubTitle}}</view>
+    </view>
+    <image wx:if="{{detail.barcode_path!=''}}" class="" mode="aspectFit" src="{{detail.barcode_path}}"></image>
+    <view class="des">{{detail.tip_text}}</view>
+    <!-- <view hidden="{{shareHidden}}" wx:if="{{detail.GENERAL_NUM!=''}}" class="des des-el">每位用户只限领取{{detail.GENERAL_NUM}}张</view> -->
+  </view>
+  <view class="tip">
+    <view class="p" wx:for="{{detail.description_text}}">{{item}}</view>
+  </view>
+</view>
+<view class="share-cou" hidden="{{shareHidden}}">
+  <!-- <view class="p des-el" wx:if="{{detail.ADDITIONAL_GENERAL_NUM!='0'}}">导购员只剩下{{detail.ADDITIONAL_GENERAL_NUM}}张</view>
+  <view class="p des-el" wx:else>您来晚了，都被抢走了！</view> -->
+  <view class="p des-el">{{sharecou.DESCRIPTION}}</view>
+  <view class="cn-list" data-id="{{sharecou.voucherId}}">
+    <image class="img" src="../../../../static/images/can-con3.png"></image>
+    <view class="vv pr">
+      <view class="c">{{sharecou.leftTitle}}</view>
+      <view class="type-s">{{sharecou.leftTitle_sub}}</view>
+    </view>
+    <view class="vv cc">
+      <view class="tt">{{sharecou.centerTitle}}</view>
+      <view class="ds">{{sharecou.centerSubTitle}}</view>
+      <view class="date">{{sharecou.centerDatePeriod}}</view>
+    </view>
+    <view wx:if="{{sharecou.ADDITIONAL_GENERAL_NUM!='0'}}" class="bt" bind:tap="addCoupon" data-id="{{detail.voucherId}}">领取</view>
+    <view wx:if="{{sharecou.ADDITIONAL_GENERAL_NUM=='0'}}" class="bt" data-id="{{sharecou.voucherId}}">无剩余</view>
+  </view>
+  <!-- <view hidden="{{shareHidden}}" class="btn" bind:tap="addCoupon" data-id="{{detail.voucherId}}" wx:if="{{detail.ADDITIONAL_GENERAL_NUM!='0'}}">领取优惠券</view> -->
+</view>

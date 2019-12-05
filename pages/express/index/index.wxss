@@ -1,0 +1,19 @@
+page{
+  height: 100%;
+}
+.nopage{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.nopage .text{
+  font-size: 30rpx;
+  width: 70%;
+  height: 60rpx;
+  line-height: 60rpx;     
+  text-align: center;
+  background-color: #0DA982;
+  color: #ffffff;
+  border-radius: 6px;
+}

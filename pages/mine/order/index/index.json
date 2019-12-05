@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "历史订单",
+  "backgroundColor": "#eef0f3",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

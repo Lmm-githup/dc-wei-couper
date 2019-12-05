@@ -1,0 +1,3 @@
+<image src="https://app.fjxzj.com/weimob/yszx-icon.png"></image>
+<view class='text'>{{tips}}</view>
+<view class='btn' data-phone="{{phone}}" bindtap='callPone'>立即电话咨询</view>

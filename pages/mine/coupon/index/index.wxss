@@ -1,0 +1,50 @@
+.footer{
+  height: 118rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d8d8d8;
+  box-sizing: border-box;
+}
+.footer .mine,.footer .center{
+  text-align: center;
+}
+.footer .mine{
+  margin-left: 129rpx;
+}
+.footer .center{
+  margin-right: 137rpx;
+}
+.footer .mine image.ac,
+.footer .center image.ac{
+  display: none;
+}
+.footer .mine image.noac,
+.footer .center image.noac{
+  display: block;
+}
+.footer .mine.action image.ac,
+.footer .center.action image.ac{
+  display: block;
+}
+.footer .mine.action image.noac,
+.footer .center.action image.noac{
+  display: none;
+}
+.footer image{
+  width: 50rpx;
+  height: 32rpx;
+  margin-bottom: 17rpx;
+  margin: 0 auto 17rpx auto;
+}
+.footer .txt{
+  line-height: 1;
+  font-size: 22rpx;
+  color: #505050;
+}
+.con{
+  background-color: #eef0f3;
+}
+.con mine{
+  height: 100%;
+}

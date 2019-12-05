@@ -1,0 +1,8 @@
+<view class="p-k" hidden="{{ pageShow }}">
+  <view class="con">
+    <image class="logo" src="../../../static/images/login-logo.png" lazy-load="false">
+    </image>
+    <view class="txt">您暂未授权新紫金+小程序获取你的信息,将无法正常使用 小程序功能。如需要正常使用，请点击”授权“按钮</view>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录/注册</button>
+  </view>
+</view>

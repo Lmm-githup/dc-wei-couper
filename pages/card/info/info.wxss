@@ -1,0 +1,272 @@
+page{
+  height: 100%;
+  background-color: #f4f4f4;
+}
+.page{
+  width: 100%;
+  min-height: 100%;
+  border-top: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+input{
+  padding: 0;
+  border: none;
+  font-size: 30rpx;
+}
+form{
+  height:100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 12rpx;
+  position: relative;
+  display: block;
+}
+.half{
+  width: 286rpx;
+  height: 52rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #333333;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 26rpx;
+}
+.txt{
+  margin-right: 64rpx;
+  white-space: nowrap;
+  font-size: 30rpx;
+  color: #505050;
+}
+.half .value{
+  color: #505050;
+  min-height: 30rpx;
+  min-width: 60rpx;
+}
+.half.left{
+  float: left;
+}
+.half.right{
+  /* float: right; */
+  /* margin-right: 40rpx; */
+  margin-left: 100rpx;
+  float: left;
+}
+.all{
+  clear:both;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 26rpx;
+  padding-top: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.all input{
+  color: #505050;
+}
+.check{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check view{
+  width: 30rpx;
+  height: 30rpx;
+}
+.nob{
+  margin-top: 50rpx;
+  border-bottom: none;
+  width: 100%;
+}
+.ac.Y{
+  background: url(https://app.fjxzj.com/weimob/check-ac.png) no-repeat;
+  background-size: 100% 100%;
+}
+.ac.N,.ac{
+  background: url(https://app.fjxzj.com/weimob/check-no.png) no-repeat;
+  background-size: 100% 100%;
+}
+.sub{
+  width: 640rpx;
+  height: 80rpx;
+  border-radius: 6rpx;
+  background-color: #0DA982;
+  font-size: 30rpx;
+  color: #ffffff;
+  margin: auto;
+}
+.alert-bg{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 11111;
+  display: none;
+}
+.alert-bg.action{
+  display: block;
+}
+.alert{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 355rpx;
+  background-color: #ffffff;
+  z-index: 11112;
+  box-sizing: border-box;
+  padding-top: 65rpx;
+  transition: all 0.3s;
+  bottom: -360rpx;
+}
+.alert.action{
+  bottom: 0;
+}
+.alert image,.alert button{
+  padding: 0;
+  border: none;
+  display: block;
+  width: 88rpx;
+  height: 88rpx;
+  margin: 0 auto 26rpx auto;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+}
+button::after{
+  border: none;
+}
+.alert .txt{
+  font-size: 24rpx;
+  color: #505050;
+  text-align: center;
+  margin-right: 0;
+}
+.alert .btn{
+  position: absolute;
+  height: 85rpx;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #a6a6a6;
+  text-align: center;
+  line-height: 85rpx;
+  font-size: 24rpx;
+  color: #505050;
+}
+.block{
+  background-color: white;
+  margin-bottom: 12rpx;
+  padding: 0 38rpx;
+}
+.block .sa{
+  overflow: hidden;
+  padding-top: 60rpx;
+  padding-bottom: 20rpx;
+}
+/* 新加 */
+.block.yks{
+  background-color: #ffffff;
+  margin-bottom: 13rpx;
+  padding: 0;
+  padding-bottom: 1px;
+}
+.block .title{
+  position: relative;
+  height: 71rpx;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 71rpx;
+  padding-left: 34rpx;
+  font-size: 26rpx;
+  color: #505050;
+}
+.m-list{
+  margin: 27rpx 34rpx;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.m-list .btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20rpx;
+  color: #505050;
+  border: 1px solid #505050;
+  width: 100rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+}
+.m-list image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.m-list .ri{
+  margin-left:22rpx;
+}
+.m-list .ti{
+  font-size: 28rpx;
+  color: #505050;
+  margin-bottom:26rpx;
+}
+.m-list .pe{
+  height: 38rpx;
+  line-height: 38rpx;
+  padding-left: 40rpx;
+  background: url(https://app.fjxzj.com/weimob/icon-tx.png) no-repeat left center;
+  background-size: 28rpx 28rpx;
+  margin-bottom: 13rpx;
+  font-size: 26rpx;
+  color: #f49716;
+}
+.m-list .ts,
+.m-list .time{
+  font-size: 22rpx;
+  color: #505050;
+  line-height: 1;
+}
+.m-list .ts{
+  margin-bottom: 12rpx;
+}
+/* 健康分析 */
+.block .list-k{
+  overflow: hidden;
+  padding-top: 38rpx;
+  padding-bottom: 6rpx;
+}
+.block .list-k .list{
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 32rpx;
+}
+.block .list-k .list image{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 auto 17rpx auto;
+}
+.block .list-k .list .txt{
+  line-height: 1;
+  color: #505050;
+  font-size: 26rpx;
+  text-align: center;
+  margin-right: 0;
+}
+/* 按钮框 */
+.btn-k{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76rpx;
+  margin-bottom: 57rpx;
+}
+.btn-k button{
+  flex-grow: 1;
+  margin: 0 20rpx;
+}

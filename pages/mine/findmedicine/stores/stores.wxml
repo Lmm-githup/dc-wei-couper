@@ -1,0 +1,23 @@
+<view class="search">
+  <view class="ink">
+    <input type="text" placeholder="请输入门店名称" bindconfirm="searchInput" confirm-type="search" placeholder-style="color: #868686" />
+    <view class="ic"></view>
+  </view>
+</view>
+<view class="list" wx:for="{{list}}">
+  <view class="t" data-id="{{item.ORG_ID}}" bind:tap="goDetail">
+    <view class="txt">
+      <view class="title">{{item.ORG_NAME}}</view>
+      <view class="el time">营业时间：8:00-22:00</view>
+      <view class="el yb">{{item.ORG_TYPE}}</view>
+    </view>
+  </view>
+  <view class="b">
+    <view class="phone" data-phone="{{item.PHONE}}" bind:tap="phoneCall">{{item.PHONE}}</view>
+    <view class="el"  data-id="{{item.ORG_ID}}" bind:tap="goDetail">门店详情</view>
+  </view>
+  <view class="jl">
+    <view class="top">{{item.distance}}千米</view>
+    <viw class="btn" data-address="{{item.ADDR}}" data-name="{{item.ORG_NAME}}" data-long="{{item.LONGITUDE}}" data-lat="{{item.LAT}}" bind:tap="goThere">去这里</viw>
+  </view>
+</view>

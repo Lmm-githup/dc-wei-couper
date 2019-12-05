@@ -1,0 +1,32 @@
+<scroll-view scroll-y class="k">
+  <view class="top-bg">
+    <!-- <image class="" src="../../../static/images/qd-in-icon.png">
+    </image> -->
+		<view class="img-new"></view>
+  </view>
+  <view class="code">
+    <view class="title">{{detail.tip_top}}</view>
+    <view class="days">
+      <block wx:for="{{dayArr}}">
+        <view class="days-con {{item}} action" wx:if="{{index==6}}">
+          <view class="top"></view>
+          <view class="txt">{{index+1}}天</view>
+        </view>
+        <view class="days-con {{item}}" wx:else>
+          <view class="top">+{{detail.tip_number}}</view>
+          <view class="txt">{{index+1}}天</view>
+        </view>
+      </block>
+    </view>
+    <view class="dds">-{{detail.tip_middle}}-</view>
+    <view class="checkin {{ischick}}" bind:tap="goCheck">{{checkTxt}}</view>
+  </view>
+  <view class="desc">
+    <view class="title">
+      <view class="txt">签到规则</view>
+    </view>
+    <view class="se-desc">
+      <view class="p" wx:for="{{detail.tip_description}}">{{item}}</view>
+    </view>
+  </view>
+</scroll-view>
