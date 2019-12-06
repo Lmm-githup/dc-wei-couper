@@ -240,8 +240,8 @@ page{
   width: 126rpx;
   height: 24rpx; */
   right: 10rpx;
-  width: 170rpx;
-  height: 45rpx;
+  width: 225rpx;
+  height: 72rpx;
   top:42rpx;
   /* background: url(https://app.fjxzj.com/weimob/tx-icon.png) no-repeat; */
   background-size: 100% 100%;

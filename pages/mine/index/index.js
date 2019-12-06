@@ -108,7 +108,8 @@ Page({
   },
 	getGuide: function () {
 		let that = this;
-    let url = `https://member.fingercrm.cn/wxscrm/chat/json_tips/${that.data.userInfo.memberId}.json`
+    let url = `https://sms.fjxzj.com/wxscrm/chat/json_tips/${that.data.userInfo.memberId}.json`
+    // console.log(url)
 		// let url =  'https://sms.fjxzj.com/wxscrm/chat/json_tips/1-2ORO9F.json'
 		wx.request({
 			url: url,

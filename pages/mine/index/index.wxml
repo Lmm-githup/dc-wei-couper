@@ -28,7 +28,7 @@
             </view>
           </view>
         </view>
-        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+        <view class="logo-tb"><image src="../../../static/images/logoreds.png"></image></view>
       </view>
       <view class="sc">
         <view class="sc-co" data-type="xf" bind:tap="goIntegral">

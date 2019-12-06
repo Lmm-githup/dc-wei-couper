@@ -314,9 +314,9 @@ page{
   position: absolute;
   /* top: 37rpx; */
   right: 10rpx;
-  width: 170rpx;
-  height: 45rpx;
-  top:42rpx;
+  width: 225rpx;
+  height: 72rpx;
+  top:35rpx;
   /* width: 126rpx;
   height: 24rpx; */
   /* background: url(https://app.fjxzj.com/weimob/tx-icon.png) no-repeat; */

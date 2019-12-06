@@ -28,7 +28,7 @@
             </view>
           </view>
         </view>
-        <view class="logo-tb"><image src="../../../static/images/de.png"></image></view>
+        <view class="logo-tb"><image src="../../../static/images/logoreds.png"></image></view>
       </view>
       <view wx:if="{{fjObj.num>0}}" class="top-tip t{{fjObj.lv}}">还需{{fjObj.num}}值(约消费{{fjObj.num}}元)可升至{{fjObj.name}}</view>
     </view>

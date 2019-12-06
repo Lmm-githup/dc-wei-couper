@@ -7,7 +7,7 @@
 </view> -->
 
   <view class="con">
-    <image class="logo" src="../../../static/images/de.png" lazy-load="false">
+    <image class="logo" src="../../../static/images/logored.png" lazy-load="false">
     </image>
     <!-- 仅限部分个人用户申请，提供附近门店查询、我要找药申请、在线咨询等服务。 -->
     <view class="txt">仅限个人用户申请，主要提供以下服务:</view>
@@ -19,7 +19,7 @@
     </view>
     <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">我要登录</button> -->
     <view class="btns">
-    <navigator hover-class="none" target='miniProgram' open-type="exit">
+    <navigator hover-class="none" target='miniProgram' open-type="exit" style="margin-right:10%">
 		  <button style="background:#ccc;color:black;">拒绝登录</button>
     </navigator>  
     

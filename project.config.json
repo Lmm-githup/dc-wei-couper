@@ -353,6 +353,62 @@
 					"id": -1,
 					"name": "pages/H5page/H5page",
 					"pathName": "pages/H5page/H5page",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginByPhone/loginByPhone",
+					"pathName": "pages/auth/loginByPhone/loginByPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/loginType/loginType",
+					"pathName": "pages/auth/loginType/loginType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/card/index/index",
+					"pathName": "pages/card/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/integral/integral",
+					"pathName": "pages/mine/integral/integral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/interests/interests",
+					"pathName": "pages/mine/interests/interests",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/paycode/paycode",
+					"pathName": "pages/mine/paycode/paycode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/service/index/index",
+					"pathName": "pages/service/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/paycode/paycode",
+					"pathName": "pages/mine/paycode/paycode",
 					"scene": null
 				}
 			]

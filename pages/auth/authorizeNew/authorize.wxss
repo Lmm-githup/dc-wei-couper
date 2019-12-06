@@ -4,11 +4,11 @@ page{
 .p-k{
   height: 100%;
   box-sizing: border-box;
-  padding-top: 50rpx;
+  padding-top: 75rpx;
 }
 .p-k .logo{
-  width: 450rpx;
-  height: 110rpx;
+  width: 503rpx;
+  height: 166rpx;
   display: block;
   margin: 100rpx auto;
 }

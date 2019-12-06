@@ -1,5 +1,5 @@
 <view class="k">
-    <image class="logo" src="../../../static/images/de.png" lazy-load="false">
+    <image class="logo" src="../../../static/images/logored.png" lazy-load="false">
     </image>
 		<view class="xttxt">仅限部分个人用户申请，为了更好的为您服务，让您的账号更加安全，需要您授权康佰家+小程序获取您微信绑定的联系方式，作为登录康佰家+小程序的凭证</view>
     <!-- <button class="wx" bind:tap="showAlert"> -->
