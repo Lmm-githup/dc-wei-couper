@@ -1,3 +1,12 @@
+@import "../../../config/icon/iconfont.wxss";
+.iconfont{
+  font-size:50rpx;
+  /* color:#1abc9c; */
+  color:#424AB5;
+  background-image: linear-gradient(#424AB5, #1abc9c);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent; 
+}
 page{
   height: 100%;
 }
@@ -58,6 +67,7 @@ page{
   overflow: hidden;
   box-shadow: 0 0 2rpx 2rpx rgba(84, 84, 84, 0.1);
   background-color: #0DA982;
+  background-image: linear-gradient(#0DA982, #1abc9c,#424AB5);
   position: relative;
 }
 .top-set-k{
@@ -382,7 +392,7 @@ page{
 .moreset{
   background-color: #fff;
   min-height: 430rpx;
-  height: calc(100% - 693rpx);
+  /* height: calc(100% - 693rpx); */
   overflow: hidden;
 }
 .moreset .title{
@@ -402,7 +412,7 @@ page{
   float: left;
   width: 33.333%;
   text-align: center;
-  margin-bottom: 20rpx;
+  margin-bottom: 45rpx;
   position: relative;
 }
 .moreset .c .ssa.jkgw .icon-n{

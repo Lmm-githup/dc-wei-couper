@@ -71,26 +71,31 @@
       <view class="title" bind:tap="democlick">功能服务</view>
       <view class="c">
         <view class="ssa jkgw" bind:tap="goGuide">
-          <image mode="aspectFit" class="" src="../../../static/images/zhuanshudaogou.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/zhuanshudaogou.png"></image> -->
+          <icon class="iconfont icon-icon_kszl"></icon>
           <view class="txt">健康顾问</view>
           <view class="icon-n" hidden="{{gwhidden}}"></view>
           <view catch:tap="goGuideDetail" class="tipps t" hidden="{{guideMes.red_chat == 0}}">{{guideMes.num_chat}}</view>
         </view>
         <view class="ssa" bind:tap="goCoupon">
-          <image mode="aspectFit" class="" src="../../../static/images/lqzx.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/lqzx.png"></image> -->
+          <icon class="iconfont icon-icon_hzp"></icon>
           <view class="txt">领券中心</view>
         </view>
         <view class="ssa" bind:tap="goFind">
-          <image mode="aspectFit" class="" src="../../../static/images/wyzy.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/wyzy.png"></image> -->
+          <icon class="iconfont icon-icon_qx"></icon>
           <view class="txt">我要找药</view>
           <view catch:tap="goFindMList" class="tipps t" hidden="{{userInfo.red_apply_medicine == 0}}">{{userInfo.num_apply_medicine}}</view>
         </view>
         <view class="ssa" bind:tap="goShop">
-          <image mode="aspectFit" class="" src="../../../static/images/jfsc.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/jfsc.png"></image> -->
+          <icon class="iconfont icon-icon_qyzl"></icon>
           <view class="txt">积分商城</view>
         </view>
         <view class="ssa" bind:tap="goShare">
-          <image mode="aspectFit" class="" src="../../../static/images/yqyl.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/yqyl.png"></image> -->
+          <icon class="iconfont icon-icon_yzgl"></icon>
           <view class="txt">邀请有礼</view>
           <view class="tipps">有礼</view>
         </view>
@@ -99,21 +104,25 @@
           <view class="txt">用药提醒</view>
         </view> -->
         <view class="ssa" bind:tap="hvyr">
-          <image mode="aspectFit" class="" src="../../../static/images/hyqy.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/hyqy.png"></image> -->
+          <icon class="iconfont icon-icon_rzcg"></icon>
           <view class="txt">会员权益</view>
         </view>
         <view class="ssa" bind:tap="goCard">
-          <image mode="aspectFit" class="" src="../../../static/images/jtk.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/jtk.png"></image> -->
+          <icon class="iconfont icon-icon_jl"></icon>
           <view class="txt">家庭卡</view>
         </view>
         <view class="ssa" bind:tap="goFeedback">
-          <image mode="aspectFit" class="" src="../../../static/images/yjfk.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/yjfk.png"></image> -->
+          <icon class="iconfont icon-icon_bj"></icon>
           <view class="txt">意见反馈</view>
           <view class="tipps" hidden="{{userInfo.red_feedback_reply==1}}">有礼</view>
           <view catch:tap="goFeedbackList" class="tipps t" hidden="{{userInfo.red_feedback_reply==0}}">{{userInfo.num_feedback_reply}}</view>
         </view>
         <view class="ssa" bind:tap="goOrder">
-          <image mode="aspectFit" class="" src="../../../static/images/lsdd.png"></image>
+          <!-- <image mode="aspectFit" class="" src="../../../static/images/lsdd.png"></image> -->
+          <icon class="iconfont icon-icon_dbsx"></icon>
           <view class="txt">历史订单</view>
         </view>
       </view>
