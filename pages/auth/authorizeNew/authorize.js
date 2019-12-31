@@ -9,11 +9,12 @@ function getQueryString(name,str) {
   // var r = window.location.search.substr(1).match(reg);
 	var r = str.match(reg);
   if (r != null) {
-    return unescape(r[2]); 
+    return unescape(r[2]); //对字符串进行解析
   } else { 
     return null;
   }
 }
+
 // 将连接中的参数转成对象
 function parseQueryString(url) {
 		var obj = {};
@@ -150,8 +151,6 @@ function csOptions(url,that){
 	that.setType(false,type);
 }
 
-
-
 Page({
   data: {
     // check:'block',
@@ -201,7 +200,6 @@ Page({
     }
 		app.globalData.firstdata.data = JSON.stringify(options);//首次进入小程序的参数
     console.log(app.globalData.firstdata.data)//我是门店进入的我的参数是{storeNo:"123"}
-    // console.log(options)
     if(options.scene){//此时这里应该不会出现场景值
       const sc = decodeURIComponent(options.scene)//进行解码
       // sid=123&vid=123&ivt=123
@@ -280,13 +278,13 @@ Page({
     user.checkLogin().then(res => {
       if(res){//这里是已经登录过的状态就直接跳转主页面
         that.setType(true,that.data.openType);//直接跳转首页
-				let data = appOptions;
+				let data = appOptions;//把从各个地方进入页面的参数重新赋值给data传给后台
 				data.openid = wx.getStorageSync('openid');//获取openid
 				data.unionid = wx.getStorageSync('unionid');//获取unionid
 				util.request(api.queryoauth,data,'GET').then(r=>{//查询会员的情况
 					console.log('登陆状态下调用queryoauth上传参数',r);
 				}).catch(e=>{
-					console.log('登陆状态下调用queryoauth上传参数',e);
+					console.log('登陆状态下调用queryoauth上传参数是',e);
 				})
       }
     }).catch(() => {

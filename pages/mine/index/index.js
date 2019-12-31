@@ -114,7 +114,7 @@ Page({
 		wx.request({
 			url: url,
 			success: (res) => {
-				console.log(res.data);
+				// console.log(res.data);
 				let gwhidden = true;
 				if(that.data.userInfo.GUIDE_ID==''){
 				  gwhidden = true
@@ -493,10 +493,11 @@ Page({
     // });
     wx.navigateToMiniProgram({
       // appId:'wxfba1f2a0082ea7c9',
-      appId: 'wxc886aa55acc9989a',
+      // appId: 'wxc886aa55acc9989a',
+      appId:'wx9ac6a4ae3519cff4',
       path:'pages/integral-mall/index/index',
       extraData:{},
-      envVersion:'release',
+      envVersion: 'trial',
       success: (result)=>{
       },
       fail: ()=>{},
@@ -569,7 +570,7 @@ Page({
     }
   },
   hvyr: function() {
-    wx.navigateTo({
+    wx.navigateTo({ 
       url: '../interests/interests'
     });
   },

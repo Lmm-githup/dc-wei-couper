@@ -72,26 +72,26 @@
     "list": [
       {
         "pagePath": "pages/mine/index/index",
-        "iconPath": "static/images/img/mehei.png",
-        "selectedIconPath": "static/images/img/me.png",
+        "iconPath": "static/images/img/me.png",
+        "selectedIconPath": "static/images/img/_me.png",
         "text": "我的"
       },
       {
         "pagePath": "pages/service/index/index",
-        "iconPath": "static/images/img/kanghei.png",
-        "selectedIconPath": "static/images/img/kang.png",
+        "iconPath": "static/images/img/health.png",
+        "selectedIconPath": "static/images/img/_health.png",
         "text": "健康服务"
       },
       {
         "pagePath": "pages/huixiang/huixiang",
-        "iconPath": "static/images/img/huihei.png",
-        "selectedIconPath": "static/images/img/hui.png",
+        "iconPath": "static/images/img/enjoy.png",
+        "selectedIconPath": "static/images/img/_enjoy.png",
         "text": "惠享"
       },
       {
         "pagePath": "pages/express/index/index",
-        "iconPath": "static/images/img/yaohei.png",
-        "selectedIconPath": "static/images/img/yao.png",
+        "iconPath": "static/images/img/sel.png",
+        "selectedIconPath": "static/images/img/_sel.png",
         "text": "送药到家"
       }
     ],

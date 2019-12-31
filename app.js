@@ -28,11 +28,11 @@ App({
     const op = options;
     console.log(op);
     let data = {
-      path: op.path,
-      scene: op.scene,
-      query: JSON.stringify(op.query),
-      shareTicket: op.shareTicket,
-      referrerInfo: op.referrerInfo
+      path: op.path,//前台切入页
+      scene: op.scene,//场景值
+      query: JSON.stringify(op.query),//携带参数
+      shareTicket: op.shareTicket,//群发票据
+      referrerInfo: op.referrerInfo//从另一个小程序公众号或app进入的返回值
     };
 		this.globalData.firstdata.path = op.path;//首次进入页面的路径
     util.request(api.scanlog,data,'POST').then(res=>{

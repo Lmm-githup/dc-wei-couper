@@ -9,7 +9,7 @@ Page({
       // appId: 'wxc886aa55acc9989a',//这是康百家的
       path:'pages/index/index',
       extraData:{},
-      envVersion:'release',
+      envVersion:'trial',
       success: (result)=>{
         console.log("送药到家成功,",result)
       },

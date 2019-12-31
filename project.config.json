@@ -22,7 +22,7 @@
 		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.9.4",
 	"appid": "wx8794ae9fe2f2b8ff",
 	"projectname": "%E5%BE%AE%E4%BC%9A%E5%91%98",
 	"debugOptions": {

@@ -157,7 +157,7 @@ page{
   right: 10rpx;
   width: 225rpx;
   height: 72rpx;
-  top:42rpx;
+  top:35rpx;
   /* background: url(https://app.fjxzj.com/weimob/tx-icon.png) no-repeat; */
   background-size: 100% 100%;
 }
