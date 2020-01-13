@@ -2,7 +2,7 @@ var user = require('../../../utils/user.js');
 var util  = require('../../../utils/util.js');
 var api = require('../../../config/api.js');
 var app = getApp();
-var appOptions = {};
+var appOptions = {};      
 // 取出链接中特定的参数值opentype
 function getQueryString(name,str) {
 	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
@@ -304,7 +304,7 @@ Page({
   getUserInfo: function(res){
     let that = this;
 		that.exitAlert();
-    // console.log(res)
+    console.log(res)
     if(!res.detail.userInfo){//如果没有用户的信息就返回false
       return false;
     }
@@ -346,23 +346,23 @@ Page({
           wx.setStorageSync('GUIDE', r.userinfo.GUIDE_ID);
           that.setType(true,that.data.openType);//用户存在直接跳转首页
         } else if (r.errcode === 0) { // 用户不是会员
-					if((app.globalData.scene==1011)||(app.globalData.scene==1047)){//如果场景值是1011和1047的话
-						wx.showModal({
-							title: '提示',
-							content: '未能识别导购门店等信息，请选择继续注册还是重新扫码获取？',
-							cancelText: '继续注册',
-							confirmText: '重新扫码',
-							success:function(res){
-								if(res.confirm){
-									checkScan(that)//重新扫码
-								}else if (res.cancel) {
-									that.setType(false,that.data.openType);//跳转到绑定用户手机让他成为会员
-								}
-							}
-						})
-					}else{
+					// if((app.globalData.scene==1011)||(app.globalData.scene==1047)){//如果场景值是1011和1047的话
+					// 	wx.showModal({
+					// 		title: '提示',
+					// 		content: '未能识别导购门店等信息，请选择继续注册还是重新扫码获取？',
+					// 		cancelText: '继续注册',
+					// 		confirmText: '重新扫码',
+					// 		success:function(res){
+					// 			if(res.confirm){
+					// 				checkScan(that)//重新扫码
+					// 			}else if (res.cancel) {
+					// 				that.setType(false,that.data.openType);//跳转到绑定用户手机让他成为会员
+					// 			}
+					// 		}
+					// 	})
+					// }else{
 						that.setType(false,that.data.openType);//就让他跳转到获取手机号成为会员的页面
-					}
+					// }
         }else{
           console.log(r);//返回求情接口参数失败的信息
           wx.hideLoading();

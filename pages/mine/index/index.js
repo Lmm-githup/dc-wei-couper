@@ -1,4 +1,4 @@
-//index.js
+//index.js  userInfo
 //获取应用实例setStorageSync
 const app = getApp();
 const api = require("../../../config/api.js");
@@ -108,7 +108,7 @@ Page({
   },
 	getGuide: function () {
 		let that = this;
-    let url = `https://sms.fjxzj.com/wxscrm/chat/json_tips/${that.data.userInfo.memberId}.json`
+    let url = `https://member.dchycrm.com/wxscrm/chat/json_tips/${that.data.userInfo.memberId}.json`
     // console.log(url)
 		// let url =  'https://sms.fjxzj.com/wxscrm/chat/json_tips/1-2ORO9F.json'
 		wx.request({
@@ -143,7 +143,7 @@ Page({
   },
   onShow: function () {
     let that = this;
-    util.request(api.memberinfo,{},"POST").then(res=>{
+    util.request(api.memberinfo,{},"POST").then(res=>{//获取首页用户信息
       let lv = res.userinfo.tiernum;
       let fjObj = {};
       let jfnow = parseInt(res.userinfo.RANK_POINTS);

@@ -1,6 +1,6 @@
 // API根域名
 // 开发测试时使用
-var WxApiRoot = 'https://member.fingercrm.cn/wxscrm/';//德成
+var WxApiRoot = 'https://member.dchycrm.com/wxscrm/';//德成
 // 正式上线时使用
 // var WxApiRoot = 'https://www.anewffd.com/wx/';
 
@@ -47,7 +47,7 @@ module.exports = {
   subOrder: WxApiRoot + 'api/member.php?api=order_evaluate',
   // 家庭卡是否开卡
   openCard: WxApiRoot + 'api/familycard.php?api=open_card',
-  // 家庭卡成员列表
+  // 家庭卡成员列表 
   myCard: WxApiRoot + 'api/familycard.php?api=my_card',
   // 邀请绑定时的家庭卡详情
   CardDetail: WxApiRoot + 'api/familycard.php?api=card_info',
